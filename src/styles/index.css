@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700");
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FBFBFB;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 40px 0 0;
+  transition: color 0.1s linear;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  margin: 20px 20px 10px;
+}
+dt:first-child {
+  margin-top: 10px;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  margin: 25px 0;
+}
+
+article {
+  width: 30%;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 15px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  transition: box-shadow 0.1s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px;
+}
+article:hover {
+  box-shadow: 4px 4px 3px 1px #E6E6E6;
+}
+article h3 {
+  margin: 0;
+}
+article button {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+button {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border: none;
+  border: 1px solid #999;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.1s linear;
+}
+button:hover {
+  background-color: #EEE;
+}
+
+.background_art_1 {
+  width: 40vw;
+  translate: -15% 45%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.background_art_2 {
+  width: 40vw;
+  rotate: 60deg;
+  position: absolute;
+  z-index: 1;
+}
+
+.background_top {
+  left: -54vw;
+  top: 0;
+  scale: -1 1;
+  translate: 0 -10vh;
+}
+
+.background_bottom {
+  right: -54vw;
+  bottom: 0;
+  scale: 1 -1;
+  translate: 0 10vh;
+}
+
+nav {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  translate: 0 -50%;
+  position: absolute;
+  right: 50px;
+}
+nav ul li {
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: #EEE;
+}
+
+.secondary_list li {
+  width: auto;
+  padding: 10px 25px;
+  white-space: pre;
+}
+
+menu {
+  width: 20vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+menu ul {
+  padding: 1px 0 1px 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-left: 1px solid #999;
+  z-index: 2;
+}
+menu ul span, menu ul a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+}
+menu ul span:hover, menu ul a:hover {
+  background-color: #EEE;
+}
+
+footer {
+  width: 70vw;
+  height: 150px;
+  font-size: 0.9rem;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  border-top: 1px solid #999;
+}
+
+.footer_pri span:last-child {
+  margin-top: 20px;
+}
+
+.footer_sec {
+  height: 120px;
+}
+
+.footer_mid {
+  height: 120px;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  translate: -50% 0;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner > *:nth-child(2) {
+  margin: 0;
+}
+.banner > *:nth-child(3) {
+  margin-top: 2vh;
+}
+.banner > *:last-child {
+  margin: auto;
+}
+.banner li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 15px;
+  border-left: 1px solid #333;
+  cursor: pointer;
+}
+.banner li:nth-child(1) {
+  padding-left: 0;
+  border-left: none;
+}
+.banner li:nth-child(3) {
+  padding-right: 0;
+}
+
+.primary_banner {
+  height: calc(100vh - 100px);
+}
+
+.secondary_banner h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.image_container {
+  height: 57vh;
+}
+.image_container img {
+  height: 100%;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 700;
+  color: #333;
+}
+.contacts > * {
+  display: flex;
+  gap: 10px;
+}
+.contacts svg {
+  width: 20px;
+}
+.contacts svg path {
+  fill: #333;
+}
+.contacts svg .path_no_fill {
+  fill: #FBFBFB;
+}
+
+.view {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.secondary_view {
+  margin-top: 50px;
+}
+.secondary_view menu {
+  height: 100vh;
+}
+
+.view__content {
+  width: 65vw;
+  padding-left: 50px;
+}
+.view__content section {
+  margin-bottom: 50px;
+}
+.view__content section:last-child {
+  margin-bottom: 0;
+}
+
+.view__content_alt {
+  width: 40vw;
+  padding-left: 0;
+  position: relative;
+}
+.view__content_alt section > * {
+  text-align: center;
+}
+.view__content_alt .flex_row {
+  justify-content: center;
+}
+
+.section_dl dt {
+  margin-top: 10px;
+}
+.section_dl dd {
+  margin-bottom: 0;
+  padding: 15px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  transition: box-shadow 0.1s linear;
+}
+.section_dl dd:hover {
+  box-shadow: 4px 4px 3px 1px #E6E6E6;
+}
+
+.flex_row {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  transition: scale 0.1s linear;
+}
+.flex_row img {
+  width: 50px;
+  object-fit: contain;
+  transition: filter 0.1s linear;
+}
+
+.flex_row_hover:hover {
+  scale: 1.02;
+}
+
+.flex_row_justify {
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex_row_center {
+  margin-top: 30px;
+  align-items: center;
+  gap: 20px;
+}
+.flex_row_center dd {
+  margin: 0;
+}
+
+.flex_row_margin {
+  margin-top: 50px;
+}
+
+.change_project_section {
+  margin-top: 100px;
+  cursor: pointer;
+}
+.change_project_section em {
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  left: 5px;
+  transition: left 0.1s linear;
+}
+.change_project_section:hover em {
+  left: 15px;
+}
+
+#section_intro {
+  visibility: hidden;
+  translate: 0 -100px;
+}
+
+#section_about dt {
+  font-weight: 600;
+}
+
+.section_about__list {
+  list-style-type: disc;
+  margin-left: 60px;
+  padding-right: 25px;
+}
+.section_about__list li {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

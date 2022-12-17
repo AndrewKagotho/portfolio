@@ -1,0 +1,114 @@
+.background_art_1 {
+  width: 40vw;
+  translate: -15% 45%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.background_art_2 {
+  width: 40vw;
+  rotate: 60deg;
+  position: absolute;
+  z-index: 1;
+}
+
+.background_top {
+  left: -54vw;
+  top: 0;
+  scale: -1 1;
+  translate: 0 -10vh;
+  // border: 1px solid blue;
+}
+
+.background_bottom {
+  right: -54vw;
+  bottom: 0;
+  scale: 1 -1;
+  translate: 0 10vh;
+  // border: 1px solid blue;
+}
+
+nav {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  ul {
+    display: inline-block;
+    @include v_center_content;
+    position: absolute;
+    right: 50px;
+
+    li {
+      width: 80px;
+      text-align: center;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 10px 0;
+      border-radius: $border_radius;
+      transition: background-color $animation;
+      cursor: pointer;
+
+      &:hover { background-color: $hover; }
+      }
+    }
+}
+
+.secondary_list {
+  li {
+    width: auto;
+    padding: 10px 25px;
+    white-space: pre;
+  }
+}
+
+menu {
+  width: 20vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  ul {
+    padding: 1px 0 1px 20px;
+    @include center_content;
+    border-left: 1px solid $grey;
+    z-index: 2;
+
+    span, a {
+      padding: 5px 10px;
+      border-radius: $border_radius;
+      transition: background-color $animation;
+      cursor: pointer;
+
+      &:hover { background-color: $hover; }
+    }
+  }
+}
+
+footer {
+  width: 70vw;
+  height: 150px;
+  font-size: .9rem;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  border-top: 1px solid $grey;
+  
+  
+}
+
+.footer_pri { span:last-child { margin-top: 20px; } }
+.footer_sec { height: 120px; }
+.footer_mid {
+  height: 120px;
+  margin: 0;
+  @include h_center_content;
+  align-items: center;
+}
