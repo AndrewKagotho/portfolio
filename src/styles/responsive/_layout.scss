@@ -1,0 +1,55 @@
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  nav {
+    height: 75px;
+    border: 1px solid red;
+
+    ul {
+      background-color: $base;
+      @include center_content;
+      position: fixed;
+      right: 50px;
+      border: 1px solid blue;
+  
+      li {
+        width: 80px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 10px 0;
+        border-radius: $border_radius;
+        transition: background-color $animation;
+        cursor: pointer;
+  
+        &:hover { background-color: $hover; }
+      }
+    }
+  }
+
+  menu {
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+  
+    ul {
+      padding: 0 25px;
+      border-left: none;
+      background-color: $base;
+      display: flex;
+      justify-content: space-around;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+
+      li { display: inline-block; }
+      span, a { padding: 0; }
+    }
+  }
+
+  .background_art_1 { display: none; }
+
+  footer {
+    width: 100vw;
+    margin: 0;
+    align-items: center;
+  }
+}

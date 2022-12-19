@@ -7,7 +7,7 @@ const About = () => {
       <dl>
         <dt>United States International University (USIU - Africa)</dt>
         <dd>BSc. in Applied Computer Technology</dd>
-        <dd>Concentration in Software Engineering</dd>
+        <dd>Concentration: Software Engineering</dd>
         <dd>Years active: 2018 - 2022</dd>
         <dt>UpperHill School</dt>
         <dd>KCSE score: 81% (A-)</dd>

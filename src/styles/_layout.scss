@@ -1,6 +1,6 @@
 .background_art_1 {
   width: 40vw;
-  translate: -15% 45%;
+  translate: -15% 50%;
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -36,7 +36,6 @@ nav {
   z-index: 1;
 
   ul {
-    display: inline-block;
     @include v_center_content;
     position: absolute;
     right: 50px;
@@ -74,7 +73,7 @@ menu {
   z-index: 2;
 
   ul {
-    padding: 1px 0 1px 20px;
+    padding-left: 20px;
     @include center_content;
     border-left: 1px solid $grey;
     z-index: 2;
@@ -100,8 +99,6 @@ footer {
   justify-content: center;
   gap: 3px;
   border-top: 1px solid $grey;
-  
-  
 }
 
 .footer_pri { span:last-child { margin-top: 20px; } }

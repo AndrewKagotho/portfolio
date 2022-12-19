@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './layout/Navbar'
 import ProjectNav from './layout/ProjectNav'
 import View from './views'
@@ -8,7 +8,7 @@ import './styles/index.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Navbar />}>
           <Route index element={<View />} />
@@ -18,7 +18,7 @@ function App() {
           <Route index element={<ProjectView />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

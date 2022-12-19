@@ -17,12 +17,12 @@
     border-left: 1px solid $grey_alt;
     cursor: pointer;
 
-    &:nth-child(1) {
+    &:first-child {
       padding-left: 0;
       border-left: none;
     }
 
-    &:nth-child(3) { padding-right: 0; }
+    &:last-child { padding-right: 0; }
   }
 }
 
@@ -42,7 +42,7 @@
   font-weight: 700;
   color: $grey_alt;
 
-  & > * {
+  & > div {
     display: flex;
     gap: 10px;
   }
@@ -56,10 +56,10 @@
 }
 
 .view {
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-bottom: 100px;
 
   // & > * { border: 1px solid red; }
 }
@@ -95,11 +95,14 @@
 
 .flex_row {
   margin: 20px 0;
+  margin-left: 40px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 40px;
+  gap: 30px;
   transition: scale $animation;
   // border: 1px solid blue;
+
+  dd { margin: 0; }
 
   img {
     width: 50px;

@@ -2,5 +2,7 @@
 @import 'base';
 @import 'layout';
 @import 'components';
-@import 'responsive';
 @import 'view';
+@import './responsive/base';
+@import './responsive/layout';
+@import './responsive/view';
