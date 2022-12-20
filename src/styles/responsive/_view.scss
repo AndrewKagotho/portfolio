@@ -16,6 +16,12 @@
 
   .primary_banner { height: calc(100vh - 75px); }
 
+  .secondary_banner {
+    h2 { margin-bottom: 0px !important;}
+    span { margin-top: 15px !important; }
+    ul { display: none; }
+  }
+
   .image_container { height: 40vh; }
 
   .contacts {
@@ -40,6 +46,12 @@
     padding: 0;
   }
 
+  .view__content_alt {
+    margin-bottom: 0;
+    width: 85vw;
+    li { margin: 15px 0; }
+  }
+
   .flex_row {
     gap: 20px;
     img { width: 50px; }
@@ -48,6 +60,23 @@
   .flex_row_justify {
     margin: 0;
     flex-direction: column;
+  }
+
+  .flex_row_center {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  #section_intro {
+    translate: 0 0;
+    transform: translateY(-100px);
+  }
+
+  .toast_text {
+    translate: 0 0;
+    bottom: 15vh;
+    transform: translateX(-50%);
   }
 
   .section_about__list {

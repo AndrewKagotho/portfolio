@@ -1,4 +1,7 @@
 @media only screen and (min-width: 360px) and (max-width: 480px) {
+  .background_art_1 { display: none; }
+  .background_art_2 { display: none; }
+  
   nav {
     width: 100vw;
     height: 75px;
@@ -9,7 +12,7 @@
       fill: $grey_alt;
       border-radius: $border_radius;
       background-color: $base;
-      @include v_center_content;
+      top: 5vh;
       translate: 0 0;
       position: absolute;
       right: 7vw;
@@ -22,6 +25,7 @@
 
     ul {
       height: 50px;
+      gap: 0;
       border: 1px solid $grey;
       border-radius: $border_radius;
       background-color: $base;
@@ -35,7 +39,8 @@
   
       li {
         width: 100px;
-        padding: 0;
+        padding: 8px;
+        &:hover { background-color: transparent; }
       }
     }
   }
@@ -66,8 +71,6 @@
         text-align: center;
         border-radius: $border_radius;
         padding: 8px;
-
-        &:hover { background-color: $hover; }
       }
 
       span, a {
@@ -77,13 +80,16 @@
     }
   }
 
-  .background_art_1 { display: none; }
-
   footer {
     width: 85vw;
     margin: 0;
     align-items: center;
     @include h_center_content;
+    translate: 0 0;
+    transform: translateX(-50%);
+  }
+
+  .footer_mid {
     translate: 0 0;
     transform: translateX(-50%);
   }

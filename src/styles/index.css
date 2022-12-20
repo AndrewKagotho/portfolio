@@ -3,6 +3,7 @@ html {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -168,7 +169,7 @@ nav ul li:hover {
   background-color: #EEE;
 }
 
-.secondary_list li {
+.secondary_list {
   width: auto;
   padding: 10px 25px;
   white-space: pre;
@@ -267,7 +268,7 @@ footer {
 
 .secondary_banner h2 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px !important;
 }
 
 .image_container {
@@ -306,7 +307,7 @@ footer {
 }
 
 .secondary_view {
-  margin-top: 50px;
+  margin: 50px;
 }
 .secondary_view menu {
   height: 100vh;
@@ -325,11 +326,15 @@ footer {
 
 .view__content_alt {
   width: 40vw;
+  margin-bottom: 0;
   padding-left: 0;
   position: relative;
 }
 .view__content_alt section > * {
   text-align: center;
+}
+.view__content_alt ul {
+  margin: 0;
 }
 .view__content_alt .flex_row {
   justify-content: center;
@@ -412,6 +417,20 @@ footer {
   font-weight: 600;
 }
 
+.toast_text {
+  opacity: 0;
+  position: relative;
+  left: 50%;
+  translate: -50% 0;
+  position: fixed;
+  bottom: 10vh;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #999;
+  color: #FFF;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .section_about__list {
   list-style-type: disc;
   margin-left: 60px;
@@ -423,6 +442,9 @@ footer {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
   h1 {
     font-size: 40px;
     margin: 20px 0;
@@ -432,6 +454,12 @@ footer {
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 480px) {
+  .background_art_1 {
+    display: none;
+  }
+  .background_art_2 {
+    display: none;
+  }
   nav {
     width: 100vw;
     height: 75px;
@@ -442,9 +470,7 @@ footer {
     fill: #333;
     border-radius: 5px;
     background-color: #FBFBFB;
-    position: relative;
-    top: 50%;
-    translate: 0 -50%;
+    top: 5vh;
     translate: 0 0;
     position: absolute;
     right: 7vw;
@@ -461,6 +487,7 @@ footer {
   }
   nav ul {
     height: 50px;
+    gap: 0;
     border: 1px solid #999;
     border-radius: 5px;
     background-color: #FBFBFB;
@@ -474,7 +501,10 @@ footer {
   }
   nav ul li {
     width: 100px;
-    padding: 0;
+    padding: 8px;
+  }
+  nav ul li:hover {
+    background-color: transparent;
   }
   menu {
     width: 100vw;
@@ -503,17 +533,11 @@ footer {
     border-radius: 5px;
     padding: 8px;
   }
-  menu ul li:hover {
-    background-color: #EEE;
-  }
   menu ul span, menu ul a {
     padding: 5px;
   }
   menu ul span:hover, menu ul a:hover {
     background-color: transparent;
-  }
-  .background_art_1 {
-    display: none;
   }
   footer {
     width: 85vw;
@@ -522,6 +546,10 @@ footer {
     position: relative;
     left: 50%;
     translate: -50% 0;
+    translate: 0 0;
+    transform: translateX(-50%);
+  }
+  .footer_mid {
     translate: 0 0;
     transform: translateX(-50%);
   }
@@ -548,6 +576,15 @@ footer {
   .primary_banner {
     height: calc(100vh - 75px);
   }
+  .secondary_banner h2 {
+    margin-bottom: 0px !important;
+  }
+  .secondary_banner span {
+    margin-top: 15px !important;
+  }
+  .secondary_banner ul {
+    display: none;
+  }
   .image_container {
     height: 40vh;
   }
@@ -571,6 +608,13 @@ footer {
     margin-bottom: 5vh;
     padding: 0;
   }
+  .view__content_alt {
+    margin-bottom: 0;
+    width: 85vw;
+  }
+  .view__content_alt li {
+    margin: 15px 0;
+  }
   .flex_row {
     gap: 20px;
   }
@@ -580,6 +624,20 @@ footer {
   .flex_row_justify {
     margin: 0;
     flex-direction: column;
+  }
+  .flex_row_center {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  #section_intro {
+    translate: 0 0;
+    transform: translateY(-100px);
+  }
+  .toast_text {
+    translate: 0 0;
+    bottom: 15vh;
+    transform: translateX(-50%);
   }
   .section_about__list {
     line-height: 1.7;

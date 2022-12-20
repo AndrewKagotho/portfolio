@@ -28,7 +28,12 @@
 
 .primary_banner { height: calc(100vh - 100px); }
 
-.secondary_banner { h2 { font-size: 40px; margin-bottom: 20px;} }
+.secondary_banner {
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px !important;
+  }
+}
 
 .image_container { 
   height: 57vh;
@@ -65,7 +70,7 @@
 }
 
 .secondary_view {
-  margin-top: 50px;
+  margin: 50px;
   menu { height: 100vh; }
 }
 
@@ -81,10 +86,12 @@
 
 .view__content_alt {
   width: 40vw;
+  margin-bottom: 0;
   padding-left: 0;
   position: relative;
 
   section > * { text-align: center; }
+  ul { margin: 0; }
   .flex_row { justify-content: center; }
 }
 
@@ -149,6 +156,18 @@
 
 #section_about {
   dt { font-weight: 600; }
+}
+
+.toast_text {
+  opacity: 0;
+  @include h_center_content;
+  position: fixed;
+  bottom: 10vh;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: $grey;
+  color: #FFF;
+  transition: opacity $animation_alt;
 }
 
 .section_about__list {

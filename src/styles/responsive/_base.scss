@@ -1,4 +1,6 @@
 @media only screen and (min-width: 360px) and (max-width: 480px) {
+  body { -webkit-tap-highlight-color: transparent; }
+  
   h1 {
     font-size: 40px;
     margin: 20px 0;

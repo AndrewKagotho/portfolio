@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Footer from '../layout/Footer'
 
 const illustration = 'https://illustrations.popsy.co/sky/man-with-a-laptop.svg'
@@ -8,8 +9,9 @@ const Projects = () => {
   return (
     <>
       <div className='banner secondary_banner'>
-      <div className='image_container'><img src={illustration} alt=''/></div>
+        <div className='image_container'><img src={illustration} alt=''/></div>
         <h2>Projects</h2>
+        <span>Personal projects.</span>
         <ul>
           <li>Crowdfunding app</li>
           <li>Project tracker</li>
@@ -21,29 +23,29 @@ const Projects = () => {
           <section>
             <h2>County Development Project Tracker</h2>
             <p>A tracking system that maintains project records for all counties in Kenya, providing project updates and insights on both the county and national levels.</p>
-            <div className='flex_row flex_row_center'>
-              <span>View project</span>
-              <span>View live demo</span>
-              <span>View repository</span>
-            </div>
+            <ul className='flex_row flex_row_center'>
+              <li><Link to='/project?id=county-development-project-tracker'>View project</Link></li>
+              <li>View live demo</li>
+              <li>View repository</li>
+            </ul>
           </section>
           <section>
             <h2>Crowdfunding app</h2>
             <p>An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with a MySQL backend and API integration.</p>
-            <div className='flex_row flex_row_center'>
-              <span>View project</span>
-              <span>View live demo</span>
-              <span>View repository</span>
-            </div>
+            <ul className='flex_row flex_row_center'>
+              <li>View project</li>
+              <li>View live demo</li>
+              <li>View repository</li>
+            </ul>
           </section>
           <section>
             <h2>Portfolio</h2>
             <p>This here site. Built to showcase itself and other projects.</p>
-            <div className='flex_row flex_row_center'>
-              <span>View project</span>
-              <span>View live demo</span>
-              <span>View repository</span>
-            </div>
+            <ul className='flex_row flex_row_center'>
+              <li>View project</li>
+              <li>View live demo</li>
+              <li>View repository</li>
+            </ul>
           </section>
           <section>
             <h2>Students' Living Quarters Portal</h2>

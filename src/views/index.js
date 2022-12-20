@@ -20,14 +20,15 @@ const View = () => {
         </main>
         <menu>
           <ul>
-            <li><HashLink smooth to='/#section_intro'>Intro</HashLink></li>
-            <li><HashLink smooth to='#section_about'>About</HashLink></li>
-            <li><HashLink smooth to='#section_skills'>Skills</HashLink></li>
-            <li><HashLink smooth to='#section_projects'>Projects</HashLink></li>
+            <li><HashLink to='/#section_intro'>Intro</HashLink></li>
+            <li><HashLink to='/#section_about'>About</HashLink></li>
+            <li><HashLink to='/#section_skills'>Skills</HashLink></li>
+            <li><HashLink to='/#section_projects'>Projects</HashLink></li>
           </ul>
           <img className='background_art_1' src={background} alt='' />
         </menu>
       </div>
+      {/* <span className='toast_text'>Language</span> */}
       <Footer value={'pri'} />
     </>
   )
