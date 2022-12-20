@@ -31,20 +31,25 @@
 
 nav {
   height: 100px;
+  padding-right: 50px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+
+  svg { visibility: hidden; }
 
   ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
     @include v_center_content;
-    position: absolute;
-    right: 50px;
+    float: right;
 
     li {
       width: 80px;
       text-align: center;
       display: inline-block;
-      margin: 0 5px;
+      margin: 0;
       padding: 10px 0;
       border-radius: $border_radius;
       transition: background-color $animation;
@@ -70,10 +75,10 @@ menu {
   padding: 0;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
 
   ul {
-    padding-left: 20px;
+    padding: 1px 0 1px 20px;
     @include center_content;
     border-left: 1px solid $grey;
     z-index: 2;

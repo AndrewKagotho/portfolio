@@ -1,26 +1,49 @@
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   nav {
+    width: 100vw;
     height: 75px;
-    border: 1px solid red;
+    padding: 0;
+
+    svg {
+      height: 50px;
+      fill: $grey_alt;
+      border-radius: $border_radius;
+      background-color: $base;
+      @include v_center_content;
+      translate: 0 0;
+      position: absolute;
+      right: 7vw;
+      transform: scale(0.8);
+    }
+
+    .showMenu {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity $animation;
+    }
+
+    .closeMenu {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity $animation;
+    }
 
     ul {
+      height: 50px;
+      border: 1px solid $grey;
+      border-radius: $border_radius;
       background-color: $base;
-      @include center_content;
-      position: fixed;
-      right: 50px;
-      border: 1px solid blue;
+      align-items: center;
+      translate: 0 0;
+      position: absolute;
+      top: -75%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      transition: top $animation_alt;
   
       li {
-        width: 80px;
-        text-align: center;
-        display: inline-block;
-        margin: 0 5px;
-        padding: 10px 0;
-        border-radius: $border_radius;
-        transition: background-color $animation;
-        cursor: pointer;
-  
-        &:hover { background-color: $hover; }
+        width: 100px;
+        padding: 0;
       }
     }
   }
@@ -36,7 +59,6 @@
       background-color: $base;
       display: flex;
       justify-content: space-around;
-      top: 0;
       left: 0;
       translate: 0 0;
 
@@ -48,8 +70,11 @@
   .background_art_1 { display: none; }
 
   footer {
-    width: 100vw;
+    width: 85vw;
     margin: 0;
     align-items: center;
+    @include h_center_content;
+    translate: 0 0;
+    transform: translateX(-50%);
   }
 }
