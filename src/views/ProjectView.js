@@ -16,7 +16,7 @@ const ProjectView = () => {
             <p>A survey informing the development of the system found that user experience, as manifested in the ease of use and understanding, was paramount.</p>
             <h3>The result</h3>
             <p>An online system capable of relaying public project information by facts and numbers.</p>
-            <div className='flex_row flex_row_center flex_row_margin'>
+            <div className='flex_row flex_row_alt'>
               <span>Tags:</span>
               <dd>React.js</dd>
               <dd>Node.js</dd>
@@ -25,9 +25,6 @@ const ProjectView = () => {
               <dd>SCSS</dd>
             </div>
           </section>
-          <div className='change_project_section'>
-            <h2>Next project &gt;&gt; <em>Crowdfunding app...</em></h2>
-          </div>
         </div>
         <menu>
           <ul>
@@ -35,6 +32,9 @@ const ProjectView = () => {
             <li><span>View code</span></li>
           </ul>
         </menu>
+      </div>
+      <div className='change_project_section'>
+        <h2>Next project &gt;&gt; <em>Crowdfunding app...</em></h2>
       </div>
       <Footer value={'sec'} />
     </>

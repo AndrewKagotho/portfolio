@@ -51,6 +51,7 @@ body {
   margin: 0;
   background-color: $base;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {

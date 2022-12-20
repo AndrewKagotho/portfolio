@@ -71,7 +71,10 @@
 
 .secondary_view {
   margin: 50px;
-  menu { height: 100vh; }
+
+  menu {
+    li { width: calc(100% / 2); }
+  }
 }
 
 .view__content {
@@ -132,10 +135,18 @@
   dd { margin: 0; }
 }
 
-.flex_row_margin { margin-top: 50px; }
+.flex_row_alt {
+  margin: 50px 0 0 0;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
 
 .change_project_section {
-  margin-top: 100px;
+  width: 85vw;
+  margin: 0;
+  @include h_center_content;
+  transform: translate(0, -15vh);
   cursor: pointer;
 
   em {
