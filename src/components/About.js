@@ -23,7 +23,7 @@ const About = () => {
           <li>Trained for and later responsible for CISCO registry functions i.e. profile creation, maintenance</li>
           <li>Submitted a script later adopted as a template while part of a team tasked with the mass remote installation of a network compliance software across all devices in the organization</li>
         </ul>
-        <dd>... and more. Info available in my resume.</dd>
+        <dd>More info available in my resume.</dd>
       </dl>
     </section>
   )

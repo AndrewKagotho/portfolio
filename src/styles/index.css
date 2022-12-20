@@ -3,7 +3,6 @@ html {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -450,16 +449,15 @@ footer {
     position: absolute;
     right: 7vw;
     transform: scale(0.8);
+    transition: opacity 0.1s linear;
   }
   nav .showMenu {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.1s linear;
   }
   nav .closeMenu {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.1s linear;
   }
   nav ul {
     height: 50px;
@@ -469,9 +467,9 @@ footer {
     align-items: center;
     translate: 0 0;
     position: absolute;
-    top: -75%;
+    top: -7vh;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translateX(-50%);
     transition: top 0.3s ease-in-out;
   }
   nav ul li {
@@ -484,19 +482,35 @@ footer {
     bottom: 0;
   }
   menu ul {
-    padding: 0 25px;
-    border-left: none;
+    width: 85vw;
+    height: 50px;
+    padding: 0 5px;
+    margin-bottom: 5vh;
+    border: 1px solid #999;
+    border-radius: 5px;
     background-color: #FBFBFB;
     display: flex;
     justify-content: space-around;
-    left: 0;
+    align-items: center;
     translate: 0 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   menu ul li {
+    width: 25%;
     display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  menu ul li:hover {
+    background-color: #EEE;
   }
   menu ul span, menu ul a {
-    padding: 0;
+    padding: 5px;
+  }
+  menu ul span:hover, menu ul a:hover {
+    background-color: transparent;
   }
   .background_art_1 {
     display: none;
@@ -554,6 +568,7 @@ footer {
   }
   .view__content {
     width: 85vw;
+    margin-bottom: 5vh;
     padding: 0;
   }
   .flex_row {

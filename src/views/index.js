@@ -1,3 +1,4 @@
+import { HashLink } from 'react-router-hash-link'
 import Header from '../components/Header'
 import About from '../components/About'
 import Skills from '../components/Skills'
@@ -19,10 +20,10 @@ const View = () => {
         </main>
         <menu>
           <ul>
-            <li><a href='#section_intro'>Intro</a></li>
-            <li><a href='#section_about'>About</a></li>
-            <li><a href='#section_skills'>Skills</a></li>
-            <li><a href='#section_projects'>Projects</a></li>
+            <li><HashLink smooth to='/#section_intro'>Intro</HashLink></li>
+            <li><HashLink smooth to='#section_about'>About</HashLink></li>
+            <li><HashLink smooth to='#section_skills'>Skills</HashLink></li>
+            <li><HashLink smooth to='#section_projects'>Projects</HashLink></li>
           </ul>
           <img className='background_art_1' src={background} alt='' />
         </menu>

@@ -14,19 +14,11 @@
       position: absolute;
       right: 7vw;
       transform: scale(0.8);
-    }
-
-    .showMenu {
-      visibility: visible;
-      opacity: 1;
       transition: opacity $animation;
     }
 
-    .closeMenu {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity $animation;
-    }
+    .showMenu { visibility: visible; opacity: 1; }
+    .closeMenu { visibility: hidden; opacity: 0; }
 
     ul {
       height: 50px;
@@ -36,9 +28,9 @@
       align-items: center;
       translate: 0 0;
       position: absolute;
-      top: -75%;
+      top: -7vh;
       left: 50%;
-      transform: translate(-50%, 0%);
+      transform: translateX(-50%);
       transition: top $animation_alt;
   
       li {
@@ -54,16 +46,34 @@
     bottom: 0;
   
     ul {
-      padding: 0 25px;
-      border-left: none;
+      width: 85vw;
+      height: 50px;
+      padding: 0 5px;
+      margin-bottom: 5vh;
+      border: 1px solid $grey;
+      border-radius: $border_radius;
       background-color: $base;
       display: flex;
       justify-content: space-around;
-      left: 0;
+      align-items: center;
       translate: 0 0;
+      left: 50%;
+      transform: translateX(-50%);
 
-      li { display: inline-block; }
-      span, a { padding: 0; }
+      li {
+        width: calc(100% / 4);
+        display: inline-block;
+        text-align: center;
+        border-radius: $border_radius;
+        padding: 8px;
+
+        &:hover { background-color: $hover; }
+      }
+
+      span, a {
+        padding: 5px;
+        &:hover { background-color: transparent; }
+      }
     }
   }
 
