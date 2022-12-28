@@ -28,7 +28,6 @@ const View = () => {
           <img className='background_art_1' src={background} alt='' />
         </menu>
       </div>
-      {/* <span className='toast_text'>Language</span> */}
       <Footer value={'pri'} />
     </>
   )

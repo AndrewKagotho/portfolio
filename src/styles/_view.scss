@@ -98,11 +98,6 @@
   .flex_row { justify-content: center; }
 }
 
-.section_dl {
-  dt { margin-top: 10px; }
-  dd { @include card; }
-}
-
 .flex_row {
   margin: 20px 0 20px 40px;
   display: flex;
@@ -167,6 +162,13 @@
 
 #section_about {
   dt { font-weight: 600; }
+  dt, dd, li { line-height: $line_height; }
+  li { margin: 0; }
+}
+
+#section_skills {
+  dt { margin-top: 10px; }
+  dd { @include card; }
 }
 
 .toast_text {

@@ -26,9 +26,9 @@ const Skills = () => {
 
   return (
     <>
-      <section id='section_skills' className='section_dl'>
+      <section id='section_skills'>
         <h2>Skills</h2>
-        <p>Outlined is a breakdown of the programming languages and tools I use in my workflow.</p>
+        <p>A breakdown of the programming languages and tools I use in my workflow.</p>
         <h3>Programming languages</h3>
         <dl>
           <dt>Static / dynamic / query / markup languages:</dt>
@@ -37,8 +37,8 @@ const Skills = () => {
             <dd onMouseOver={() => displayToast('PHP')} onMouseLeave={hideToast}><img src={PHP} alt='PHP' /></dd>
             <dd onMouseOver={() => displayToast('Java')} onMouseLeave={hideToast}><img src={Java} alt='Java' /></dd>
             <dd onMouseOver={() => displayToast('MySQL')} onMouseLeave={hideToast}><img src={MySQL} alt='MySQL' /></dd>
-            <dd onMouseOver={() => displayToast('CSS')} onMouseLeave={hideToast}><img src={CSS} alt='CSS' /></dd>
-            <dd onMouseOver={() => displayToast('HTML')} onMouseLeave={hideToast}><img src={HTML} alt='HTML' /></dd>
+            <dd onMouseOver={() => displayToast('CSS3')} onMouseLeave={hideToast}><img src={CSS} alt='CSS' /></dd>
+            <dd onMouseOver={() => displayToast('HTML5')} onMouseLeave={hideToast}><img src={HTML} alt='HTML' /></dd>
             <dd onMouseOver={() => displayToast('Markdown')} onMouseLeave={hideToast}><img src={Markdown} alt='Markdown' /></dd>
           </div>
         </dl>
@@ -51,22 +51,23 @@ const Skills = () => {
             <dd onMouseOver={() => displayToast('Express JS')} onMouseLeave={hideToast}><img src={Express} alt='Express' /></dd>
             <dd onMouseOver={() => displayToast('SASS/SCSS')} onMouseLeave={hideToast}><img src={SASS} alt='SASS' /></dd>
           </div>
-          <dt>Version control:</dt>
+          <dt>DevOps:</dt>
           <div className='flex_row flex_row_hover'>
             <dd onMouseOver={() => displayToast('Git')} onMouseLeave={hideToast}><img src={Git} alt='Git' /></dd>
             <dd onMouseOver={() => displayToast('GitHub')} onMouseLeave={hideToast}><img src={GitHub} alt='GitHub' /></dd>
           </div>
           <dt>Knowledge areas:</dt>
           <div className='flex_row flex_row_hover'>
+            <dd>Databases</dd>
             <dd>RESTful APIs</dd>
-            <dd>Command line</dd>
+            <dd>CLI</dd>
             <dd>Responsive design</dd>
             <dd>RegEx</dd>
             <dd>Batch</dd>
           </div>
           <dt>Others:</dt>
           <div className='flex_row flex_row_hover'>
-            <dd>Graphic design in Adobe Illustrator</dd>
+            <dd>Graphic design (Adobe Illustrator)</dd>
           </div>
         </dl>
       </section>
