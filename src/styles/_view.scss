@@ -31,12 +31,12 @@
 .secondary_banner {
   h2 {
     font-size: 40px;
-    margin-bottom: 10px !important;
+    margin: 5vh 0 2vh;
   }
 }
 
-.image_container { 
-  height: 57vh;
+.banner__image_container {
+  height: 45vh;
   img { height: 100%; }
 }
 
@@ -70,11 +70,7 @@
 }
 
 .secondary_view {
-  margin: 50px;
-
-  menu {
-    li { width: calc(100% / 2); }
-  }
+  margin: 7vh 0 0;
 }
 
 .view__content {
@@ -93,9 +89,19 @@
   padding-left: 0;
   position: relative;
 
-  section > * { text-align: center; }
-  ul { margin: 0; }
-  .flex_row { justify-content: center; }
+  section {
+    & > * { text-align: center; }
+    &:last-child { margin-bottom: 40px; }
+
+    & > div {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    button { width: 100%; }
+  }
 }
 
 .flex_row {
@@ -116,13 +122,6 @@
 }
 
 .flex_row_hover { &:hover { scale: $scale; } }
-
-.flex_row_center {
-  margin-top: 30px;
-  align-items: center;
-  gap: 20px;
-  dd { margin: 0; }
-}
 
 .flex_row_alt {
   margin: 50px 0 0 0;
@@ -156,7 +155,7 @@
 
 #section_about {
   dt { font-weight: 600; }
-  dt, dd { line-height: $line_height; }
+  dd { line-height: $line_height; }
 
   ul {
     margin-left: 40px;
@@ -191,7 +190,7 @@
   p { margin-top: 0; }
 
   & > button:last-child {
-    margin-top: 30px;
+    margin-top: 25px;
     float: right;
     white-space: pre;
   }

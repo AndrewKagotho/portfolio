@@ -47,20 +47,26 @@
   }
 
   .view__content_alt {
-    margin-bottom: 0;
     width: 85vw;
-    li { margin: 15px 0; }
+
+    section {
+      & > * { text-align: center; }
+      &:last-child { margin-bottom: 0; }
+  
+      & > div {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+  
+      button { width: 50%; }
+    }
   }
 
   .flex_row {
     gap: 20px;
     img { width: 50px; }
-  }
-
-  .flex_row_center {
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
   }
 
   .flex_row_alt {

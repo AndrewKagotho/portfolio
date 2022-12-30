@@ -1,58 +1,49 @@
 import { Link } from 'react-router-dom'
 import Footer from '../layout/Footer'
 
-const illustration = 'https://illustrations.popsy.co/sky/man-with-a-laptop.svg'
 const background1 = 'https://illustrations.popsy.co/sky/abstract-art-6.svg'
-const background2 = 'https://illustrations.popsy.co/sky/abstract-art-6.svg'
 
 const Projects = () => {
   return (
     <>
       <div className='banner secondary_banner'>
-        <div className='image_container'><img src={illustration} alt=''/></div>
         <h2>Projects</h2>
-        <span>Personal projects.</span>
-        <ul>
-          <li>Crowdfunding app</li>
-          <li>Project tracker</li>
-          <li>Portfolio site</li>
-        </ul>
+        <span>Personal works.</span>
       </div>
       <div className='view secondary_view'>
         <div className='view__content view__content_alt'>
+          <img className='background_art_2' src={background1} alt='' />
           <section>
             <h2>County Development Project Tracker</h2>
-            <p>A tracking system that maintains project records for all counties in Kenya, providing project updates and insights on both the county and national levels.</p>
-            <ul className='flex_row flex_row_center'>
-              <li><Link to='/project?id=county-development-project-tracker'>View project</Link></li>
-              <li>View live demo</li>
-              <li>View repository</li>
-            </ul>
+            <p>A tracking system that maintains project records for all counties in Kenya, providing project updates and insights on each county and computing cummulative national project statistics.</p>
+            <div>
+              <button><Link to='/project?id=county-development-project-tracker'>View project</Link></button>
+              <button>View live demo</button>
+              <button>View repository</button>
+            </div>
           </section>
           <section>
             <h2>Crowdfunding app</h2>
-            <p>An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with a MySQL backend and API integration.</p>
-            <ul className='flex_row flex_row_center'>
-              <li>View project</li>
-              <li>View live demo</li>
-              <li>View repository</li>
-            </ul>
+            <p>An HTML, CSS and JavaScript developer challenge on Frontend Mentor further developed with an RDB backend and API integration.</p>
+            <div>
+              <button>View project</button>
+              <button>View live demo</button>
+              <button>View repository</button>
+            </div>
           </section>
           <section>
             <h2>Portfolio</h2>
-            <p>This here site. Built to showcase itself and other projects.</p>
-            <ul className='flex_row flex_row_center'>
-              <li>View project</li>
-              <li>View live demo</li>
-              <li>View repository</li>
-            </ul>
+            <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews.</p>
+            <div>
+              <button>View project</button>
+              <button>View repository</button>
+            </div>
           </section>
           <section>
             <h2>Students' Living Quarters Portal</h2>
-            <p>Coming soon.</p>
+            <p>An account management portal for students and landlords in off-campus living establishments, offering rent management solutions and direct communications in-app.</p>
+            <p>Date: 15/01/23.</p>
           </section>
-          <img className='background_art_2 background_top' src={background1} alt='' />
-          <img className='background_art_2 background_bottom' src={background2} alt='' />
         </div>
       </div>
       <Footer value={'mid'} />

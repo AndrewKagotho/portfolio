@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <section id='section_intro' />
       <header className='banner primary_banner'>
-        <div className='image_container'><img src={illustration} alt=''/></div>
+        <div className='banner__image_container'><img src={illustration} alt=''/></div>
         <h1>Kagotho, Andrew G.</h1>
         <ul>
           <li>BASc. Applied Computer Technology</li>

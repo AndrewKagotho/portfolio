@@ -16,7 +16,7 @@ const About = () => {
         <dt>Kenya Commercial Bank (KCB)</dt>
         <dd>Networks Infrastructure, IT Department</dd>
         <dd>Years active: 2022 (Jan - Apr)</dd>
-        <dd>Role included but not limited to:</dd>
+        <dd>Role included, but not limited to:</dd>
         <ul>
           <li>Network access management</li>
           <li>LAN connectivity troubleshooting</li>
