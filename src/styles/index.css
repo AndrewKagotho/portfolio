@@ -32,7 +32,7 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: 700;
-  margin: 40px 0 0;
+  margin: 30px 0 0;
   transition: color 0.1s linear;
 }
 
@@ -50,7 +50,7 @@ dl {
 }
 
 dt {
-  margin: 20px 20px 0;
+  margin: 15px 20px 0;
 }
 dt:first-child {
   margin-top: 10px;
@@ -89,10 +89,15 @@ article button {
   margin-top: 10px;
 }
 
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #CCC;
+}
+
 button {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
-  font-weight: 500;
   padding: 5px 15px;
   border: none;
   border: 1px solid #999;
@@ -201,7 +206,8 @@ footer {
   width: 70vw;
   height: 150px;
   font-size: 0.9rem;
-  margin-left: 50px;
+  margin-left: 60px;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +251,7 @@ footer {
   display: inline-block;
   margin: 0;
   padding: 0 15px;
-  border-left: 1px solid #333;
+  border-left: 1px solid #999;
   cursor: pointer;
 }
 .banner li:first-child {
@@ -294,7 +300,7 @@ footer {
 }
 
 .view {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -354,12 +360,6 @@ footer {
   scale: 1.02;
 }
 
-.flex_row_justify {
-  margin-bottom: 0;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .flex_row_center {
   margin-top: 30px;
   align-items: center;
@@ -404,11 +404,21 @@ footer {
 #section_about dt {
   font-weight: 600;
 }
-#section_about dt, #section_about dd, #section_about li {
+#section_about dt, #section_about dd {
   line-height: 1.7;
 }
-#section_about li {
-  margin: 0;
+#section_about ul {
+  margin-left: 40px;
+  margin-top: 0px;
+}
+#section_about ul li {
+  display: inline-block;
+  margin: 3px 0;
+  padding: 0 15px;
+  border-left: 1px solid #999;
+}
+#section_about ul li:first-child {
+  border: none;
 }
 
 #section_skills dt {
@@ -425,6 +435,23 @@ footer {
   box-shadow: 4px 4px 3px 1px #E6E6E6;
 }
 
+#section_projects > div {
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#section_projects hr {
+  margin: 15px 0;
+}
+#section_projects p {
+  margin-top: 0;
+}
+#section_projects > button:last-child {
+  margin-top: 30px;
+  float: right;
+  white-space: pre;
+}
+
 .toast_text {
   opacity: 0;
   position: relative;
@@ -437,16 +464,6 @@ footer {
   background-color: #999;
   color: #FFF;
   transition: opacity 0.3s ease-in-out;
-}
-
-.section_about__list {
-  list-style-type: disc;
-  margin-left: 60px;
-  padding-right: 25px;
-}
-.section_about__list li {
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 768px) {
@@ -471,6 +488,7 @@ footer {
     padding: 0;
     position: sticky;
     top: 0;
+    z-index: 2;
   }
   nav svg {
     height: 50px;
@@ -480,7 +498,7 @@ footer {
     top: 5vh;
     translate: 0 0;
     position: absolute;
-    right: 7vw;
+    right: 6.3vw;
     transform: scale(0.8);
     transition: opacity 0.1s linear;
   }
@@ -628,10 +646,6 @@ footer {
   .flex_row img {
     width: 50px;
   }
-  .flex_row_justify {
-    margin: 0;
-    flex-direction: column;
-  }
   .flex_row_center {
     flex-direction: column;
     align-items: center;
@@ -651,6 +665,16 @@ footer {
   #section_intro {
     translate: 0 0;
     transform: translateY(-100px);
+  }
+  #section_about ul {
+    margin-left: 50px;
+  }
+  #section_about li:first-child {
+    border-left: 1px solid #999 !important;
+  }
+  #section_projects > div {
+    margin: 0;
+    flex-direction: column;
   }
   .toast_text {
     translate: 0 0;

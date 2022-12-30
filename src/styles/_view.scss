@@ -14,7 +14,7 @@
     display: inline-block;
     margin: 0;
     padding: 0 15px;
-    border-left: 1px solid $grey_alt;
+    border-left: 1px solid $grey;
     cursor: pointer;
 
     &:first-child {
@@ -61,7 +61,7 @@
 }
 
 .view {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -117,12 +117,6 @@
 
 .flex_row_hover { &:hover { scale: $scale; } }
 
-.flex_row_justify {
-  margin-bottom: 0;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .flex_row_center {
   margin-top: 30px;
   align-items: center;
@@ -162,13 +156,45 @@
 
 #section_about {
   dt { font-weight: 600; }
-  dt, dd, li { line-height: $line_height; }
-  li { margin: 0; }
+  dt, dd { line-height: $line_height; }
+
+  ul {
+    margin-left: 40px;
+    margin-top: 0px;
+    
+    li {
+      display: inline-block;
+      margin: 3px 0;
+      padding: 0 15px;
+      border-left: 1px solid $grey;
+
+      &:first-child { border: none; }
+    }
+  }
 }
 
 #section_skills {
   dt { margin-top: 10px; }
   dd { @include card; }
+}
+
+#section_projects {
+  // border: 1px solid red;
+
+  & > div {  
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  hr { margin: 15px 0; }
+  p { margin-top: 0; }
+
+  & > button:last-child {
+    margin-top: 30px;
+    float: right;
+    white-space: pre;
+  }
 }
 
 .toast_text {
@@ -181,15 +207,4 @@
   background-color: $grey;
   color: #FFF;
   transition: opacity $animation_alt;
-}
-
-.section_about__list {
-  list-style-type: disc;
-  margin-left: 60px;
-  padding-right: 25px;
-  
-  li {
-    margin: 0;
-    margin-bottom: 10px;
-  }
 }

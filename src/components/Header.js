@@ -8,7 +8,7 @@ const Header = () => {
         <div className='image_container'><img src={illustration} alt=''/></div>
         <h1>Kagotho, Andrew G.</h1>
         <ul>
-          <li>BSc. Applied Computer Technology</li>
+          <li>BASc. Applied Computer Technology</li>
           <li>Software Engineer</li>
           <li>Front-End Developer</li>
         </ul>

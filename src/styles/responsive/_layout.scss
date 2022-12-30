@@ -8,6 +8,7 @@
     padding: 0;
     position: sticky;
     top: 0;
+    z-index: 2;
 
     svg {
       height: 50px;
@@ -17,7 +18,7 @@
       top: 5vh;
       translate: 0 0;
       position: absolute;
-      right: 7vw;
+      right: 6.3vw;
       transform: scale(0.8);
       transition: opacity $animation;
     }
