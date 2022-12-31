@@ -1,3 +1,4 @@
+import React from 'react'
 import { HashLink } from 'react-router-hash-link'
 import Header from '../components/Header'
 import About from '../components/About'
@@ -8,6 +9,10 @@ import Footer from '../layout/Footer'
 const background = 'https://illustrations.popsy.co/sky/abstract-art-1.svg'
 
 const View = () => {
+  
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>

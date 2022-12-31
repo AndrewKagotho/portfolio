@@ -1,6 +1,12 @@
-import Footer from "../layout/Footer"
+import React from 'react'
+import Footer from '../layout/Footer'
 
 const ProjectView = () => {
+  
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className='view secondary_view'>

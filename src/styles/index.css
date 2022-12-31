@@ -113,14 +113,38 @@ button:hover {
   bottom: 0;
   z-index: 1;
 }
+@media (prefers-reduced-motion: no-preference) {
+  .background_art_1 {
+    animation: art_rotate 6s ease-in-out infinite alternate-reverse;
+  }
+}
+@keyframes art_rotate {
+  from {
+    rotate: -10deg;
+  }
+  to {
+    rotate: 15deg;
+  }
+}
 
 .background_art_2 {
-  height: 100vh;
-  rotate: 78deg;
+  width: 33vw;
   position: absolute;
-  top: 0;
-  left: -64.5vw;
-  scale: -1 1;
+  bottom: 25vh;
+  left: -31vw;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .background_art_2 {
+    animation: art_rotate_2 0.1s ease-in-out infinite alternate-reverse;
+  }
+}
+@keyframes art_rotate_2 {
+  from {
+    left: -31vw;
+  }
+  to {
+    left: -31.05vw;
+  }
 }
 
 nav {
@@ -260,7 +284,7 @@ footer {
 }
 
 .banner__image_container {
-  height: 45vh;
+  height: 55vh;
 }
 .banner__image_container img {
   height: 100%;
@@ -328,7 +352,7 @@ footer {
   gap: 30px;
 }
 .view__content_alt section button {
-  width: 100%;
+  width: 150px;
 }
 
 .flex_row {
@@ -549,6 +573,7 @@ footer {
   footer {
     width: 85vw;
     margin: 0;
+    padding: 0;
     align-items: center;
     position: relative;
     left: 50%;
@@ -592,8 +617,8 @@ footer {
   .secondary_banner ul {
     display: none;
   }
-  .image_container {
-    height: 40vh;
+  .banner__image_container {
+    height: 43vh;
   }
   .contacts {
     flex-direction: column;

@@ -4,15 +4,31 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
+  
+  @media (prefers-reduced-motion: no-preference) {
+    animation: art_rotate 6s ease-in-out infinite alternate-reverse;
+  }
+  
+  @keyframes art_rotate {
+    from { rotate: -10deg; }
+    to { rotate: 15deg; }
+  }
 }
 
 .background_art_2 {
-  height: 100vh;
-  rotate: 78deg;
+  width: 33vw;
   position: absolute;
-  top: 0;
-  left: -64.5vw;
-  scale: -1 1;
+  bottom: 25vh;
+  left: -31vw;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: art_rotate_2 .1s ease-in-out infinite alternate-reverse;
+  }
+  
+  @keyframes art_rotate_2 {
+    from { left: -31vw; }
+    to { left: -31.05vw; }
+  }
 }
 
 nav {
