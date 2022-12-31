@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { AppContext } from '../App'
 import Footer from '../layout/Footer'
 
 const background = 'https://illustrations.popsy.co/sky/product-launch.svg'
@@ -9,6 +10,8 @@ const Projects = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  const {setProject} = React.useContext(AppContext)
 
   return (
     <>
@@ -23,7 +26,7 @@ const Projects = () => {
             <h2>County Development Project Tracker</h2>
             <p>A tracking system that maintains project records for all counties in Kenya, providing project updates and insights on each county and computing cummulative national project statistics.</p>
             <div>
-              <button><Link to='/project?id=county-development-project-tracker'>More details</Link></button>
+              <button onClick={() => setProject(1)}><Link to='/project'>More details</Link></button>
               <button>View live demo</button>
               <button>View repository</button>
             </div>
@@ -32,7 +35,7 @@ const Projects = () => {
             <h2>Crowdfunding app</h2>
             <p>An HTML, CSS and JavaScript developer challenge on Frontend Mentor further developed with an RDB backend and API integration.</p>
             <div>
-              <button>More details</button>
+              <button onClick={() => setProject(2)}><Link to='/project'>More details</Link></button>
               <button>View live demo</button>
               <button>View repository</button>
             </div>
@@ -41,7 +44,7 @@ const Projects = () => {
             <h2>Portfolio</h2>
             <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews.</p>
             <div>
-              <button>More details</button>
+              <button onClick={() => setProject(3)}><Link to='/project'>More details</Link></button>
               <button>View repository</button>
             </div>
           </section>

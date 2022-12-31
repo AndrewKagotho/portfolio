@@ -65,7 +65,7 @@ const Skills = () => {
             <dd>RegEx</dd>
             <dd>Batch</dd>
           </div>
-          <dt>Others:</dt>
+          <dt>Could come in handy:</dt>
           <div className='flex_row flex_row_hover'>
             <dd>Graphic design (Adobe Illustrator)</dd>
           </div>
