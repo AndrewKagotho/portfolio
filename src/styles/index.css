@@ -119,15 +119,15 @@ button:hover {
 }
 @media (prefers-reduced-motion: no-preference) {
   .background_art_1 {
-    animation: art_rotate 6s ease-in-out infinite alternate-reverse;
+    animation: art_rotate 3s ease-in-out infinite alternate-reverse;
   }
 }
 @keyframes art_rotate {
   from {
-    rotate: -10deg;
+    rotate: -5deg;
   }
   to {
-    rotate: 15deg;
+    rotate: 0deg;
   }
 }
 
@@ -230,6 +230,10 @@ footer {
   gap: 3px;
   border-top: 1px solid #999;
 }
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .footer_pri span:last-child {
   margin-top: 20px;
@@ -297,8 +301,10 @@ footer {
 .contacts {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   font-weight: 700;
+}
+.contacts a {
   color: #333;
 }
 .contacts > div {
@@ -313,6 +319,13 @@ footer {
 }
 .contacts svg .path_no_fill {
   fill: #FBFBFB;
+}
+.contacts sup {
+  position: relative;
+  left: -5px;
+}
+.contacts sup svg {
+  width: 10px;
 }
 
 .view {
@@ -454,17 +467,17 @@ footer {
   border: none;
 }
 
-#section_skills dt {
+#section_tech dt {
   margin-top: 10px;
 }
-#section_skills dd {
+#section_tech dd {
   margin-bottom: 0;
   padding: 15px;
   border: 1px solid #CCC;
   border-radius: 5px;
   transition: box-shadow 0.1s linear;
 }
-#section_skills dd:hover {
+#section_tech dd:hover {
   box-shadow: 4px 4px 3px 1px #E6E6E6;
 }
 

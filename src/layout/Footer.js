@@ -3,7 +3,7 @@ const Footer = ({value}) => {
   const tag = (
     <>
       <span>Designed and developed by Andrew Kagotho</span>
-      <span>Like what you see? Send an email.</span>
+      <span>Like what you see? <a href='mailto:andrewkagotho7@live.com'>Send an email</a>.</span>
     </>
   )
 

@@ -1,19 +1,19 @@
 import React from 'react'
-import HTML from '../assets/icons/html.png'
-import CSS from '../assets/icons/css.png'
-import JavaScript from '../assets/icons/javascript.png'
-import Node from '../assets/icons/node.png'
-import Express from '../assets/icons/express.png'
-import MySQL from '../assets/icons/mysql.png'
-import PHP from '../assets/icons/php.png'
-import ReactLogo from '../assets/icons/react.png'
-import SASS from '../assets/icons/sass.png'
-import Java from '../assets/icons/java.png'
-import Markdown from '../assets/icons/markdown.png'
-import Git from '../assets/icons/git.png'
-import GitHub from '../assets/icons/github.png'
+import HTML from '../assets/images/html.png'
+import CSS from '../assets/images/css.png'
+import JavaScript from '../assets/images/javascript.png'
+import Node from '../assets/images/node.png'
+import Express from '../assets/images/express.png'
+import MySQL from '../assets/images/mysql.png'
+import PHP from '../assets/images/php.png'
+import ReactLogo from '../assets/images/react.png'
+import SASS from '../assets/images/sass.png'
+import Java from '../assets/images/java.png'
+import Markdown from '../assets/images/markdown.png'
+import Git from '../assets/images/git.png'
+import GitHub from '../assets/images/github.png'
 
-const Skills = () => {
+const Tech = () => {
 
   const toastRef = React.useRef()
 
@@ -26,8 +26,8 @@ const Skills = () => {
 
   return (
     <>
-      <section id='section_skills'>
-        <h2>Skills</h2>
+      <section id='section_tech'>
+        <h2>Technologies</h2>
         <p>A breakdown of the programming languages and tools I use in my workflow.</p>
         <h3>Programming languages</h3>
         <dl>
@@ -65,7 +65,7 @@ const Skills = () => {
             <dd>RegEx</dd>
             <dd>Batch</dd>
           </div>
-          <dt>Could come in handy:</dt>
+          <dt>Extras:</dt>
           <div className='flex_row flex_row_hover'>
             <dd>Graphic design (Adobe Illustrator)</dd>
           </div>
@@ -76,4 +76,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Tech

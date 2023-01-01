@@ -43,9 +43,10 @@
 .contacts {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   font-weight: 700;
-  color: $grey_alt;
+
+  a { color: $grey_alt; }
 
   & > div {
     display: flex;
@@ -54,9 +55,14 @@
 
   svg {
     width: 20px;
-
     path { fill: $grey_alt; }
     .path_no_fill { fill: $base; }
+    }
+    
+  sup {
+    position: relative;
+    left: -5px;
+    svg { width: 10px; }
   }
 }
 
@@ -187,7 +193,7 @@
   }
 }
 
-#section_skills {
+#section_tech {
   dt { margin-top: 10px; }
   dd { @include card; }
 }

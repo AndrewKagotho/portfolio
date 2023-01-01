@@ -6,12 +6,12 @@
   z-index: 1;
   
   @media (prefers-reduced-motion: no-preference) {
-    animation: art_rotate 6s ease-in-out infinite alternate-reverse;
+    animation: art_rotate 3s ease-in-out infinite alternate-reverse;
   }
   
   @keyframes art_rotate {
-    from { rotate: -10deg; }
-    to { rotate: 15deg; }
+    from { rotate: -5deg; }
+    to { rotate: 0deg; }
   }
 }
 
@@ -104,6 +104,11 @@ footer {
   justify-content: center;
   gap: 3px;
   border-top: 1px solid $grey;
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
 
 .footer_pri { span:last-child { margin-top: 20px; } }
