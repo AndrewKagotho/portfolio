@@ -26,12 +26,14 @@
   }
 }
 
-.primary_banner { height: calc(100vh - 100px); }
+.primary_banner { height: calc(100vh - $nav_height); }
 
 .secondary_banner {
+  margin-bottom: 7vh;
+
   h2 {
     font-size: 40px;
-    margin: 5vh 0 2vh;
+    margin: 4vh 0 2vh;
   }
 }
 
@@ -48,9 +50,13 @@
 
   a { color: $grey_alt; }
 
-  & > div {
+  & > a {
     display: flex;
     gap: 10px;
+
+    &:hover {
+      sup { translate: 3px -3px; }
+    }
   }
 
   svg {
@@ -62,12 +68,13 @@
   sup {
     position: relative;
     left: -5px;
+    transition: translate $animation;
     svg { width: 10px; }
   }
 }
 
 .view {
-  margin-bottom: 50px;
+  margin-bottom: 3vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -76,7 +83,7 @@
 }
 
 .secondary_view {
-  margin: 7vh 0 0;
+  margin-top: 5vh;
   align-items: center;
   menu { height: 35vh; }
 }
@@ -169,27 +176,12 @@
   }
 }
 
-#section_intro {
-  visibility: hidden;
-  translate: 0 -100px;
-}
-
 #section_about {
   dt { font-weight: 600; }
   dd { line-height: $line_height; }
-
-  ul {
-    margin-left: 40px;
-    margin-top: 0px;
-    
-    li {
-      display: inline-block;
-      margin: 3px 0;
-      padding: 0 15px;
-      border-left: 1px solid $grey;
-
-      &:first-child { border: none; }
-    }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }
 
@@ -199,8 +191,6 @@
 }
 
 #section_projects {
-  // border: 1px solid red;
-
   & > div {  
     margin-bottom: 0;
     justify-content: space-between;
@@ -208,10 +198,11 @@
   }
   
   hr { margin: 15px 0; }
-  p { margin-top: 0; }
+
+  article { p { margin-top: 0; } }
 
   & > button:last-child {
-    margin-top: 25px;
+    margin: 2vh 0 5vh;
     float: right;
     white-space: pre;
   }

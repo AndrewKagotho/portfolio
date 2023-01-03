@@ -14,12 +14,11 @@
     }
   }
 
-  .primary_banner { height: calc(100vh - 75px); }
+  .primary_banner { height: calc(100vh - $nav_height_sm); }
 
   .secondary_banner {
-    h2 { margin-bottom: 0px !important;}
-    span { margin-top: 15px !important; }
-    ul { display: none; }
+    margin-bottom: 5vh;
+    h2 { margin-bottom: 1vh;}
   }
 
   .banner__image_container { height: 43vh; }
@@ -29,7 +28,7 @@
     align-items: flex-start;
     gap: 15px;
   
-    & > div { span:first-child { display: none; } }
+    & > a { span:first-child { display: none; } }
   }
 
   .view {
@@ -62,7 +61,7 @@
         margin-top: 30px;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
       }
   
       button { width: 50%; }
@@ -105,19 +104,13 @@
     transform: translateY(-100px);
   }
 
-  #section_about {
-    ul { margin-left: 50px; }
-
-    li {
-      &:first-child { border-left: 1px solid $grey !important; }
-    }
-  }
-
   #section_projects {
     & > div {  
       margin: 0;
       flex-direction: column;
     }
+
+    & > button:last-child { margin: 5vh 0; }
   }
   
   .toast_text {

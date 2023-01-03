@@ -6,12 +6,12 @@
   z-index: 1;
   
   @media (prefers-reduced-motion: no-preference) {
-    animation: art_rotate 3s ease-in-out infinite alternate-reverse;
+    animation: art_rotate 4s ease-in-out infinite alternate-reverse;
   }
   
   @keyframes art_rotate {
     from { rotate: -5deg; }
-    to { rotate: 0deg; }
+    to { rotate: 5deg; }
   }
 }
 
@@ -32,7 +32,7 @@
 }
 
 nav {
-  height: 100px;
+  height: $nav_height;
   padding-right: 50px;
 
   svg { visibility: hidden; }

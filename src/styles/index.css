@@ -99,7 +99,7 @@ hr {
 button {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 7px 15px;
   border: none;
   border: 1px solid #999;
   background-color: transparent;
@@ -119,7 +119,7 @@ button:hover {
 }
 @media (prefers-reduced-motion: no-preference) {
   .background_art_1 {
-    animation: art_rotate 3s ease-in-out infinite alternate-reverse;
+    animation: art_rotate 4s ease-in-out infinite alternate-reverse;
   }
 }
 @keyframes art_rotate {
@@ -127,7 +127,7 @@ button:hover {
     rotate: -5deg;
   }
   to {
-    rotate: 0deg;
+    rotate: 5deg;
   }
 }
 
@@ -286,9 +286,12 @@ footer a {
   height: calc(100vh - 100px);
 }
 
+.secondary_banner {
+  margin-bottom: 7vh;
+}
 .secondary_banner h2 {
   font-size: 40px;
-  margin: 5vh 0 2vh;
+  margin: 4vh 0 2vh;
 }
 
 .banner__image_container {
@@ -307,9 +310,12 @@ footer a {
 .contacts a {
   color: #333;
 }
-.contacts > div {
+.contacts > a {
   display: flex;
   gap: 10px;
+}
+.contacts > a:hover sup {
+  translate: 3px -3px;
 }
 .contacts svg {
   width: 20px;
@@ -323,20 +329,21 @@ footer a {
 .contacts sup {
   position: relative;
   left: -5px;
+  transition: translate 0.1s linear;
 }
 .contacts sup svg {
   width: 10px;
 }
 
 .view {
-  margin-bottom: 50px;
+  margin-bottom: 3vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 
 .secondary_view {
-  margin: 7vh 0 0;
+  margin-top: 5vh;
   align-items: center;
 }
 .secondary_view menu {
@@ -442,29 +449,15 @@ footer a {
   transition: left 0.1s linear;
 }
 
-#section_intro {
-  visibility: hidden;
-  translate: 0 -100px;
-}
-
 #section_about dt {
   font-weight: 600;
 }
 #section_about dd {
   line-height: 1.7;
 }
-#section_about ul {
-  margin-left: 40px;
-  margin-top: 0px;
-}
-#section_about ul li {
-  display: inline-block;
-  margin: 3px 0;
-  padding: 0 15px;
-  border-left: 1px solid #999;
-}
-#section_about ul li:first-child {
-  border: none;
+#section_about a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 #section_tech dt {
@@ -489,11 +482,11 @@ footer a {
 #section_projects hr {
   margin: 15px 0;
 }
-#section_projects p {
+#section_projects article p {
   margin-top: 0;
 }
 #section_projects > button:last-child {
-  margin-top: 25px;
+  margin: 2vh 0 5vh;
   float: right;
   white-space: pre;
 }
@@ -586,7 +579,7 @@ footer a {
     width: 85vw;
     height: 50px;
     padding: 0 5px;
-    margin: 5vh 0;
+    margin-bottom: 5vh;
     border: 1px solid #999;
     border-radius: 5px;
     background-color: #FBFBFB;
@@ -648,14 +641,11 @@ footer a {
   .primary_banner {
     height: calc(100vh - 75px);
   }
+  .secondary_banner {
+    margin-bottom: 5vh;
+  }
   .secondary_banner h2 {
-    margin-bottom: 0px !important;
-  }
-  .secondary_banner span {
-    margin-top: 15px !important;
-  }
-  .secondary_banner ul {
-    display: none;
+    margin-bottom: 1vh;
   }
   .banner__image_container {
     height: 43vh;
@@ -665,7 +655,7 @@ footer a {
     align-items: flex-start;
     gap: 15px;
   }
-  .contacts > div span:first-child {
+  .contacts > a span:first-child {
     display: none;
   }
   .view {
@@ -695,7 +685,7 @@ footer a {
     margin-top: 30px;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
   }
   .view__content_alt section button {
     width: 50%;
@@ -737,15 +727,12 @@ footer a {
     translate: 0 0;
     transform: translateY(-100px);
   }
-  #section_about ul {
-    margin-left: 50px;
-  }
-  #section_about li:first-child {
-    border-left: 1px solid #999 !important;
-  }
   #section_projects > div {
     margin: 0;
     flex-direction: column;
+  }
+  #section_projects > button:last-child {
+    margin: 5vh 0;
   }
   .toast_text {
     translate: 0 0;

@@ -25,7 +25,7 @@ const View = () => {
         </main>
         <menu>
           <ul>
-            <li><HashLink to='/#section_intro'>Intro</HashLink></li>
+            <li onClick={() => window.scrollTo(0,0)}><span>Intro</span></li>
             <li><HashLink to='/#section_about'>About</HashLink></li>
             <li><HashLink to='/#section_tech'>Techs</HashLink></li>
             <li><HashLink to='/#section_projects'>Projects</HashLink></li>
