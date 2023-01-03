@@ -1,8 +1,9 @@
 import React from 'react'
 import Footer from '../layout/Footer'
 import { AppContext } from '../App'
+import { redirectSVG } from '../components/Header'
 
-let heading, description, content, links, technologies, prev, next
+let heading, description, content, liveLink, codeLink, technologies, prev, next
 const projectArray = ['County Development Project Tracker', 'Crowdfunding app', 'Portfolio']
 
 const ProjectView = () => {
@@ -32,11 +33,11 @@ const ProjectView = () => {
         <p>An online system capable of relaying public project information by facts and numbers.</p>
       </>
     )
-    links = (
-      <>
-        <li><span>Live demo</span></li>
-        <li><span>View code</span></li>
-      </>
+    liveLink = (
+      <span>Live demo</span>
+    )
+    codeLink = (
+      <span>View code</span>
     )
     technologies = (
       <>
@@ -63,11 +64,11 @@ const ProjectView = () => {
         <p>A lacking in citizen-centric project tracking solutions for government-run public works.</p>
       </>
     )
-    links = (
-      <>
-        <li><span>Live demo</span></li>
-        <li><span>View code</span></li>
-      </>
+    liveLink = (
+      <span>Live demo</span>
+    )
+    codeLink = (
+      <span>View code</span>
     )
     technologies = (
       <>
@@ -94,11 +95,11 @@ const ProjectView = () => {
         <p>A lacking in citizen-centric project tracking solutions for government-run public works.</p>
       </>
     )
-    links = (
-      <>
-        <li><span>Live demo</span></li>
-        <li><span>View code</span></li>
-      </>
+    liveLink = (
+      <span>Live demo</span>
+    )
+    codeLink = (
+      <span>View code</span>
     )
     technologies = (
       <>
@@ -146,8 +147,17 @@ const ProjectView = () => {
             <div className='flex_row flex_row_alt'>{technologies}</div>
           </section>
         </div>
-        <menu>
-          <ul>{links}</ul>
+        <menu className='menu_alt'>
+          <ul>
+            <li>
+              {liveLink}
+              {redirectSVG}
+            </li>
+            <li>
+              {codeLink}
+              {redirectSVG}
+            </li>
+          </ul>
         </menu>
       </div>
       <div className='jump_to_project_section'>

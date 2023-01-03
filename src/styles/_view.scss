@@ -65,12 +65,7 @@
     .path_no_fill { fill: $base; }
     }
     
-  sup {
-    position: relative;
-    left: -5px;
-    transition: translate $animation;
-    svg { width: 10px; }
-  }
+  sup { svg { width: 10px; } }
 }
 
 .view {
@@ -83,7 +78,7 @@
 }
 
 .secondary_view {
-  margin-top: 5vh;
+  margin: 5vh 0 0;
   align-items: center;
   menu { height: 35vh; }
 }
@@ -147,23 +142,24 @@
 
 .jump_to_project_section {
   width: calc(65vw - 50px);
-  margin: 10vh 0;
+  margin: 8vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10vh;
+  align-items: flex-start;
+  gap: 5vh;
   position: relative;
   left: 7.1vw;
-  cursor: pointer;
 
   h2 {
+    cursor: pointer;
+    
     &:first-child {
-      text-align: left;
       &:hover { em { left: -15px; } }
     }
 
     &:last-child {
-      text-align: right;
+      align-self: flex-end;
       &:hover { em { left: 15px; } }
     }
   }

@@ -124,8 +124,14 @@ button {
   background-color: transparent;
   border-radius: $border_radius;
   transition: background-color $animation;
+  cursor: pointer;
 
-  &:hover {
-    background-color: $hover;
-  }
+  &:hover { background-color: $hover; }
+}
+    
+sup {
+  position: relative;
+  left: -5px;
+  transition: translate $animation;
+  svg { width: 10px; }
 }

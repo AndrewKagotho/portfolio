@@ -36,12 +36,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 0px;
+    gap: 5vh;
   }
 
   .secondary_view {
     menu {
       height: auto;
+      margin: 0;
       li { width: calc(100% / 2); }
     }
   }
@@ -80,10 +81,9 @@
 
   .jump_to_project_section {
     width: 85vw;
-    margin-top: 5vh;
+    margin: 0 0 5vh;
     left: 50%;
     transform: translateX(-50%);
-    // border: 1px solid red;
     
     h2 {
       &:first-child {

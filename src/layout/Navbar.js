@@ -13,13 +13,13 @@ const Navbar = ({value}) => {
   if(value === 'primary')
     navLinks = (
       <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/projects'>Projects</Link></li>
+        <Link to='/'><li>Home</li></Link>
+        <Link to='/projects'><li>Projects</li></Link>
       </>
     )
   else if(value === 'secondary')
     navLinks = (
-      <li className='secondary_list'><Link to='/projects'>&lt;   See all projects</Link></li>
+      <Link to='/projects'><li className='secondary_list'>&lt;   See all projects</li></Link>
     )
 
   return (

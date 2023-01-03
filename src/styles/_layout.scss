@@ -27,7 +27,7 @@
   
   @keyframes art_rotate_2 {
     from { left: -31vw; }
-    to { left: -31.05vw; }
+    to { left: -31.1vw; }
   }
 }
 
@@ -75,21 +75,32 @@ menu {
   z-index: 1;
 
   ul {
-    padding: 1px 0 1px 20px;
+    padding: 15px 0 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
     @include center_content;
     border-left: 1px solid $grey;
     z-index: 2;
 
-    li { margin: 25px 0; }
-
-    span, a {
-      padding: 5px 10px;
+    li {
+      padding: 7px 10px;
+      // border: 1px solid red;
       border-radius: $border_radius;
       transition: background-color $animation;
       cursor: pointer;
+      position: relative;
 
       &:hover { background-color: $hover; }
     }
+  }
+}
+
+.menu_alt {
+  li {
+    padding-right: 3px;
+    span { margin-right: 10px; }
   }
 }
 
