@@ -61,7 +61,7 @@
       border: 1px solid $grey;
       border-radius: $border_radius;
       background-color: $base;
-      display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center;
       translate: 0 0;
@@ -82,7 +82,7 @@
       }
     }
   }
-
+  
   footer {
     width: 85vw;
     margin: 0;

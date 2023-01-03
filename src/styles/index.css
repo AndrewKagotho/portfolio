@@ -597,7 +597,7 @@ footer a {
     border: 1px solid #999;
     border-radius: 5px;
     background-color: #FBFBFB;
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     translate: 0 0;
@@ -702,7 +702,7 @@ footer a {
     align-items: center;
     gap: 25px;
   }
-  .view__content_alt section button {
+  .view__content_alt section a {
     width: 50%;
   }
   .flex_row {
