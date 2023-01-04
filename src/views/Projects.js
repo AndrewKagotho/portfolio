@@ -25,28 +25,23 @@ const Projects = () => {
           <section>
             <h2>County Development Project Tracker</h2>
             <p>A tracking system that maintains project records for all counties in Kenya, providing project updates and insights on each county and computing cummulative national project statistics.</p>
-            <div>
-              <Link to='/project'><button onClick={() => setProject(1)}>More details</button></Link>
-              <button>View live demo</button>
-              <button>View repository</button>
-            </div>
+            <Link to='/project'>
+              <button onClick={() => setProject(1)}>View project</button>
+            </Link>
           </section>
           <section>
             <h2>Crowdfunding app</h2>
             <p>An HTML, CSS and JavaScript developer challenge on Frontend Mentor further developed with an RDB backend and API integration.</p>
-            <div>
-              <Link to='/project'><button onClick={() => setProject(2)}>More details</button></Link>
-              <button>View live demo</button>
-              <button>View repository</button>
-            </div>
+            <Link to='/project'>
+              <button onClick={() => setProject(2)}>View project</button>
+            </Link>
           </section>
           <section>
             <h2>Portfolio</h2>
             <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews.</p>
-            <div>
-              <Link to='/project'><button onClick={() => setProject(3)}>More details</button></Link>
-              <button>View repository</button>
-            </div>
+            <Link to='/project'>
+              <button onClick={() => setProject(3)}>View project</button>
+            </Link>
           </section>
           <section>
             <h2>Students' Living Quarters Portal</h2>

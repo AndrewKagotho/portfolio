@@ -103,12 +103,7 @@
     & > * { text-align: center; }
     &:last-child { margin-bottom: 40px; }
 
-    & > div {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
+    a { display: block; }
 
     button { width: 150px; }
   }
@@ -160,6 +155,7 @@
 
     &:last-child {
       align-self: flex-end;
+      text-align: right;
       &:hover { em { left: 15px; } }
     }
   }
