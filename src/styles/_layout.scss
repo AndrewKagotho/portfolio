@@ -86,7 +86,6 @@ menu {
 
     li {
       padding: 7px 10px;
-      // border: 1px solid red;
       border-radius: $border_radius;
       transition: background-color $animation;
       cursor: pointer;
@@ -120,7 +119,6 @@ footer {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   }
 
   a {
@@ -129,7 +127,7 @@ footer {
   }
 }
 
-.footer_sec { height: 120px; }
+.footer_sec { height: 130px; }
 
 .footer_center {
   margin: 0;

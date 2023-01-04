@@ -64,6 +64,20 @@
     gap: 10px;
   }
 
+  #section_intro {
+    translate: 0 0;
+    transform: translateY(-100px);
+  }
+
+  #section_projects {
+    & > div {  
+      margin: 0;
+      flex-direction: column;
+    }
+
+    & > button:last-child { margin: 5vh 0 0; }
+  }
+
   .jump_to_project_section {
     width: 85vw;
     margin: 0 0 5vh;
@@ -82,20 +96,6 @@
     }
   
     em { display: block; }
-  }
-
-  #section_intro {
-    translate: 0 0;
-    transform: translateY(-100px);
-  }
-
-  #section_projects {
-    & > div {  
-      margin: 0;
-      flex-direction: column;
-    }
-
-    & > button:last-child { margin: 5vh 0 0; }
   }
   
   .toast_text {

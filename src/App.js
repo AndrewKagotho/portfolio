@@ -10,7 +10,7 @@ export const AppContext = React.createContext()
 
 const App = () => {
 
-  const [project, setProject] = React.useState()
+  const [project, setProject] = React.useState(1)
   const value = {project, setProject}
 
   return (

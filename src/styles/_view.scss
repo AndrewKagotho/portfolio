@@ -80,7 +80,7 @@
 .secondary_view {
   margin: 5vh 0 0;
   align-items: center;
-  menu { height: 35vh; }
+  menu { height: 50vh; }
 }
 
 .view__content {
@@ -135,39 +135,6 @@
   dd { @include card; }
 }
 
-.jump_to_project_section {
-  width: calc(65vw - 50px);
-  margin: 8vh 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 5vh;
-  position: relative;
-  left: 7.1vw;
-
-  h2 {
-    cursor: pointer;
-    
-    &:first-child {
-      &:hover { em { left: -15px; } }
-    }
-
-    &:last-child {
-      align-self: flex-end;
-      text-align: right;
-      &:hover { em { left: 15px; } }
-    }
-  }
-
-  em {
-    font-weight: 300;
-    position: relative;
-    left: 0;
-    transition: left $animation;
-  }
-}
-
 #section_about {
   dt { font-weight: 600; }
   dd { line-height: $line_height; }
@@ -194,9 +161,42 @@
   article { p { margin-top: 0; } }
 
   & > button:last-child {
-    margin: 2vh 0 5vh;
+    margin: 5vh 0;
     float: right;
     white-space: pre;
+  }
+}
+
+.jump_to_project_section {
+  width: calc(65vw - 50px);
+  margin: 8vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5vh;
+  position: relative;
+  left: 7.1vw;
+
+  h2 {
+    cursor: pointer;
+    
+    &:first-child {
+      align-self: flex-end;
+      text-align: right;
+      &:hover { em { left: 15px; } }
+    }
+
+    &:last-child {
+      &:hover { em { left: -15px; } }
+    }
+  }
+
+  em {
+    font-weight: 300;
+    position: relative;
+    left: 0;
+    transition: left $animation;
   }
 }
 
