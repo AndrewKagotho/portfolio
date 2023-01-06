@@ -97,6 +97,14 @@ menu {
 }
 
 .menu_alt {
+  height: auto;
+  
+  ul {
+    position: sticky;
+    top: 50%;
+    translate: 0 -50%;
+  }
+  
   li {
     padding-right: 3px;
     span { margin-right: 10px; }

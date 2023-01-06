@@ -13,9 +13,8 @@ const Header = () => {
         <div className='banner__image_container'><img src={illustration} alt=''/></div>
         <h1>Kagotho, Andrew G.</h1>
         <ul>
-          <li>BASc. Applied Computer Technology</li>
           <li>Software Engineer</li>
-          <li>Frontend Developer</li>
+          <li>BASc. Applied Computer Technology</li>
         </ul>
         <div className='contacts'>
           <a href='mailto:andrewkagotho7@live.com'>

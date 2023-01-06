@@ -90,7 +90,7 @@ const ProjectView = () => {
       <h2>Portfolio</h2>
     )
     description = (
-      <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Current unfinished projects are also highlighted here.</p>
+      <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.</p>
     )
     content = (
       <>

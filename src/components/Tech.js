@@ -17,9 +17,9 @@ const Tech = () => {
 
   const toastRef = React.useRef()
 
-  const displayToast = (arg) => {
+  const displayToast = (value) => {
     toastRef.current.style.opacity = '1'
-    toastRef.current.textContent = arg
+    toastRef.current.textContent = value
   }
 
   const hideToast = () => toastRef.current.style.opacity = '0'
@@ -28,7 +28,7 @@ const Tech = () => {
     <>
       <section id='section_tech'>
         <h2>Technologies</h2>
-        <p>A breakdown of the programming languages and tools I use in my workflow.</p>
+        <p>The programming languages and tools I use in my workflow.</p>
         <h3>Programming languages</h3>
         <dl>
           <dt>Static / dynamic / query / markup languages:</dt>

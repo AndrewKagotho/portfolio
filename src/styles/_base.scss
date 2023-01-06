@@ -98,8 +98,12 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  // align-items: flex-start;
   padding: 25px;
+
+  & > * {
+    // border: 1px solid red !important;
+  }
 
   h3 { margin: 0; }
 

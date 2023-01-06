@@ -79,8 +79,7 @@
 
 .secondary_view {
   margin: 5vh 0 0;
-  align-items: center;
-  menu { height: 50vh; }
+  align-items: stretch;
 }
 
 .view__content {
@@ -150,7 +149,7 @@
 }
 
 #section_projects {
-  & > div {  
+  & > div {
     margin-bottom: 0;
     justify-content: space-between;
     align-items: flex-start;

@@ -20,7 +20,7 @@ const Projects = () => {
         <article>
           <h3>Portfolio</h3>
           <hr/>
-          <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Current unfinished projects are also highlighted here.</p>
+          <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.</p>
           <button onClick={() => setProject(3)}><Link to='/project'>Go to project</Link></button>
         </article>
         <article>

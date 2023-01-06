@@ -76,7 +76,6 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 25px;
 }
 article:hover {
@@ -230,6 +229,14 @@ menu ul li:hover {
   background-color: #F3F3F3;
 }
 
+.menu_alt {
+  height: auto;
+}
+.menu_alt ul {
+  position: sticky;
+  top: 50%;
+  translate: 0 -50%;
+}
 .menu_alt li {
   padding-right: 3px;
 }
@@ -358,10 +365,7 @@ footer a {
 
 .secondary_view {
   margin: 5vh 0 0;
-  align-items: center;
-}
-.secondary_view menu {
-  height: 50vh;
+  align-items: stretch;
 }
 
 .view__content {
