@@ -6,18 +6,16 @@
     width: 100vw;
     height: $nav_height_sm;
     padding: 0;
-    position: sticky;
-    top: 0;
     z-index: 2;
 
     svg {
       height: 50px;
       fill: $grey_alt;
       border-radius: $border_radius;
-      background-color: $base;
+      // background-color: $base;
       top: 5vh;
       translate: 0 0;
-      position: absolute;
+      position: fixed;
       right: 6.3vw;
       transform: scale(0.8);
       transition: opacity $animation;
@@ -34,7 +32,7 @@
       background-color: $base;
       align-items: center;
       translate: 0 0;
-      position: absolute;
+      position: fixed;
       top: -7vh;
       left: 50%;
       transform: translateX(-50%);
@@ -81,6 +79,12 @@
         &:hover { background-color: transparent; }
       }
     }
+  }
+
+  .menu_alt {
+    height: auto;
+    
+    ul { position: relative; }
   }
   
   footer {

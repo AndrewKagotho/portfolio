@@ -8,7 +8,7 @@ const About = () => {
       </p>
       <h3>Degree</h3>
       <dl>
-        <dt>United States International University (USIU - Africa)</dt>
+        <dt>United States International University (USIU - Africa), Nairobi, Kenya</dt>
         <dd>BASc. in Applied Computer Technology</dd>
         <dd>Concentration: Software Engineering</dd>
         <dd>Years active: 2018 - 2022</dd>

@@ -32,8 +32,11 @@
 }
 
 nav {
+  width: 100vw;
   height: $nav_height;
   padding-right: 50px;
+  background-color: transparent;
+  position: absolute;
 
   svg { visibility: hidden; }
 
@@ -46,6 +49,7 @@ nav {
 
     li {
       width: 80px;
+      color: #FFF;
       text-align: center;
       display: inline-block;
       margin: 0;
@@ -53,8 +57,12 @@ nav {
       border-radius: $border_radius;
       transition: background-color $animation;
       cursor: pointer;
+      border: 2px solid $theme;
 
-      &:hover { background-color: $hover; }
+      &:hover {
+        background-color: $hover;
+        color: #000;
+      }
       }
     }
 }
@@ -80,7 +88,7 @@ menu {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    @include center_content;
+    @include v_center_content;
     border-left: 1px solid $grey;
     z-index: 2;
 
@@ -99,11 +107,7 @@ menu {
 .menu_alt {
   height: auto;
   
-  ul {
-    position: sticky;
-    top: 50%;
-    translate: 0 -50%;
-  }
+  ul { position: sticky; }
   
   li {
     padding-right: 3px;

@@ -1,4 +1,4 @@
-const illustration = 'https://illustrations.popsy.co/sky/engineer.svg'
+// import background from '../assets/images/Untitled-1.png'
 
 export const redirectSVG = (
   <sup>
@@ -10,12 +10,14 @@ const Header = () => {
   return (
     <>
       <header className='banner primary_banner'>
-        <div className='banner__image_container'><img src={illustration} alt=''/></div>
-        <h1>Kagotho, Andrew G.</h1>
-        <ul>
-          <li>Software Engineer</li>
-          <li>BASc. Applied Computer Technology</li>
-        </ul>
+        <div className='banner__title'>
+          <h2>The portfolio of...</h2>
+          <h1>Kagotho, Andrew G.</h1>
+          <ul>
+            <li>Software Engineer</li>
+            <li>BASc. Applied Computer Technology</li>
+          </ul>
+        </div>
         <div className='contacts'>
           <a href='mailto:andrewkagotho7@live.com'>
             <span>Email</span>
