@@ -58,7 +58,8 @@
       margin-bottom: 5vh;
       border: 1px solid $grey;
       border-radius: $border_radius;
-      background-color: $base;
+      background-color: #FFF;
+      // backdrop-filter: blur(5px);
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
@@ -88,19 +89,18 @@
   }
   
   footer {
-    width: 85vw;
-    height: 165px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    @include h_center_content;
-    translate: 0 0;
-    transform: translateX(-50%);
+    // height: 50vh;
+    padding: 2vh 0 5vh;
+    flex-direction: column;
+    background-image: linear-gradient(0, $theme, $theme_light);
+    // background-image: $background-image;
+    // background-position: 0 0vh;
+    background-repeat: no-repeat;
+    // translate: 0 -30vh;
 
     & > div {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      padding: 3vh 0;
+      span { text-align: center; }
     }
   }
 

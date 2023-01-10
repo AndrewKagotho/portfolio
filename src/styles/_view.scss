@@ -7,7 +7,7 @@
 
   & > *:last-child {
     margin: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -26,15 +26,15 @@
   width: 100vw;
   height: 80vh;
   mask-image: url('../assets/images/Untitled-1.png');
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;    
-  background-image: linear-gradient(45deg, $theme 20%, $theme_light 80%);
+  mask-size: 150% 85%;
+  mask-repeat: no-repeat;
+  background-image: $background_image;
   background-repeat: no-repeat;
   color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: motion 3s ease-in-out infinite alternate-reverse;
+  animation: motion 6s ease-in-out infinite alternate-reverse;
 
   img {
     width: 100%;
@@ -54,7 +54,7 @@
   }
 
   @keyframes motion {
-    from { mask-size: 120% 80%; }
+    from { mask-size: 120% 85%; }
     to { mask-size: 175% 100%; }
   }
 
@@ -111,6 +111,10 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  // border: 1px solid red;
+  
+  background-image: linear-gradient(0, $theme_light 0, transparent 4%);
+  background-position: bottom;
 
   // & > * { border: 1px solid red; }
 }
@@ -121,7 +125,7 @@
 }
 
 .view__content {
-  width: 65vw;
+  width: 70vw;
   padding-left: 50px;
 
   section {
@@ -195,12 +199,19 @@
   
   hr { margin: 15px 0; }
 
-  article { p { margin-top: 0; } }
+  article {
+    width: 31%;
+    p { margin-top: 0; }
+  }
+
+  button {
+    background-color: #FFF;}
 
   & > button:last-child {
     margin: 5vh 0;
     float: right;
     white-space: pre;
+    backdrop-filter: blur(5px);
   }
 }
 

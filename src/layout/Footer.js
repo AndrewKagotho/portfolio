@@ -7,20 +7,17 @@ const Footer = ({value}) => {
   )
 
   const openingTag = (
-    <>
+    <div>
       <span>Designed and developed by Andrew Kagotho</span>
       <span>Like what you see? <a href='mailto:andrewkagotho7@live.com'>Send an email</a>.</span>
-    </>
+    </div>
   )
 
   if(value === 'pri')
     return (
       <footer>
         {openingTag}
-        <div>
-          <span>Illustrations courtesy of popsy.co</span>
-          {closingTag}
-        </div>
+        {closingTag}
       </footer>
     )
   else if(value === 'sec')

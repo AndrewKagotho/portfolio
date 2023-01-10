@@ -46,7 +46,6 @@ html {
 
 body {
   margin: 0;
-  background-color: $base;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
@@ -93,17 +92,11 @@ ul {
 }
 
 article {
-  width: 30%;
   @include card;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: flex-start;
   padding: 25px;
-
-  & > * {
-    // border: 1px solid red !important;
-  }
 
   h3 { margin: 0; }
 

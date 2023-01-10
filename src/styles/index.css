@@ -12,7 +12,6 @@ html {
 
 body {
   margin: 0;
-  background-color: #FBFBFB;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
@@ -67,7 +66,6 @@ ul {
 }
 
 article {
-  width: 30%;
   margin-bottom: 0;
   padding: 15px;
   border: 1px solid #CCC;
@@ -120,6 +118,7 @@ sup svg {
 }
 
 .background_art_1 {
+  display: none;
   width: 35vw;
   translate: -5% 50%;
   position: absolute;
@@ -164,7 +163,6 @@ nav {
   width: 100vw;
   height: 100px;
   padding-right: 50px;
-  background-color: transparent;
   position: absolute;
 }
 nav svg {
@@ -203,7 +201,7 @@ nav ul li:hover {
 }
 
 menu {
-  width: 20vw;
+  width: 15vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -248,25 +246,25 @@ menu ul li:hover {
 }
 
 footer {
-  width: 70vw;
-  height: 135px;
   font-size: 0.9rem;
-  margin-left: 50px;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-  border-top: 1px solid #999;
-}
-footer > div {
-  margin-top: 20px;
+  color: #FFF;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+footer > div span {
+  display: block;
+  margin: 1vh 0;
 }
 footer a {
+  color: #FFF;
   text-decoration: underline;
   text-underline-offset: 3px;
+  transition: color 0.1s linear;
+}
+footer a:hover {
+  color: #999;
 }
 
 .footer_sec {
@@ -288,7 +286,7 @@ footer a {
 }
 .banner > *:last-child {
   margin: auto;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
 }
 
 .primary_banner {
@@ -307,15 +305,15 @@ footer a {
   width: 100vw;
   height: 80vh;
   mask-image: url("../assets/images/Untitled-1.png");
-  mask-size: 100% 100%;
+  mask-size: 150% 85%;
   mask-repeat: no-repeat;
-  background-image: linear-gradient(45deg, #0E1130 20%, #11507A 80%);
+  background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
   background-repeat: no-repeat;
   color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: motion 3s ease-in-out infinite alternate-reverse;
+  animation: motion 6s ease-in-out infinite alternate-reverse;
 }
 .banner__title img {
   width: 100%;
@@ -336,7 +334,7 @@ footer a {
 }
 @keyframes motion {
   from {
-    mask-size: 120% 80%;
+    mask-size: 120% 85%;
   }
   to {
     mask-size: 175% 100%;
@@ -400,6 +398,8 @@ footer a {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  background-image: linear-gradient(0, #11507A 0, transparent 4%);
+  background-position: bottom;
 }
 
 .secondary_view {
@@ -408,7 +408,7 @@ footer a {
 }
 
 .view__content {
-  width: 65vw;
+  width: 70vw;
   padding-left: 50px;
 }
 .view__content section {
@@ -506,13 +506,20 @@ footer a {
 #section_projects hr {
   margin: 15px 0;
 }
+#section_projects article {
+  width: 31%;
+}
 #section_projects article p {
   margin-top: 0;
+}
+#section_projects button {
+  background-color: #FFF;
 }
 #section_projects > button:last-child {
   margin: 5vh 0;
   float: right;
   white-space: pre;
+  backdrop-filter: blur(5px);
 }
 
 .jump_to_project_section {
@@ -634,7 +641,7 @@ footer a {
     margin-bottom: 5vh;
     border: 1px solid #999;
     border-radius: 5px;
-    background-color: #FBFBFB;
+    background-color: #FFF;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -662,21 +669,16 @@ footer a {
     position: relative;
   }
   footer {
-    width: 85vw;
-    height: 165px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    position: relative;
-    left: 50%;
-    translate: -50% 0;
-    translate: 0 0;
-    transform: translateX(-50%);
+    padding: 2vh 0 5vh;
+    flex-direction: column;
+    background-image: linear-gradient(0, #0E1130, #11507A);
+    background-repeat: no-repeat;
   }
   footer > div {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    padding: 3vh 0;
+  }
+  footer > div span {
+    text-align: center;
   }
   .footer_center {
     translate: 0 0;
@@ -751,6 +753,7 @@ footer a {
   }
   .view {
     margin-bottom: 0;
+    padding-bottom: 10vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -789,6 +792,9 @@ footer a {
   #section_projects > div {
     margin: 0;
     flex-direction: column;
+  }
+  #section_projects article {
+    width: 100%;
   }
   #section_projects > button:last-child {
     margin: 5vh 0 0;

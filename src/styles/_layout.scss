@@ -1,4 +1,5 @@
 .background_art_1 {
+  display: none;
   width: 35vw;
   translate: -5% 50%;
   position: absolute;
@@ -35,7 +36,6 @@ nav {
   width: 100vw;
   height: $nav_height;
   padding-right: 50px;
-  background-color: transparent;
   position: absolute;
 
   svg { visibility: hidden; }
@@ -74,7 +74,7 @@ nav {
 }
 
 menu {
-  width: 20vw;
+  width: 15vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -90,6 +90,7 @@ menu {
     gap: 15px;
     @include v_center_content;
     border-left: 1px solid $grey;
+
     z-index: 2;
 
     li {
@@ -116,26 +117,27 @@ menu {
 }
 
 footer {
-  width: 70vw;
-  height: 135px;
   font-size: .9rem;
-  margin-left: 50px;
-  padding-left: 15px;
+  color: #FFF;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-  border-top: 1px solid $grey;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
 
   & > div {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    span {
+      display: block;
+      margin: 1vh 0;
+    }
   }
 
   a {
+    color: #FFF;
     text-decoration: underline;
     text-underline-offset: 3px;
+    transition: color $animation;
+    
+    &:hover { color: $grey; }
   }
 }
 
