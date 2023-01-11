@@ -26,7 +26,7 @@
   width: 100vw;
   height: 80vh;
   mask-image: url('../assets/images/Untitled-1.png');
-  mask-size: 150% 85%;
+  mask-size: 150% 95%;
   mask-repeat: no-repeat;
   background-image: $background_image;
   background-repeat: no-repeat;
@@ -34,7 +34,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: motion 6s ease-in-out infinite alternate-reverse;
+  animation: motion 3s ease-in-out infinite alternate-reverse;
+  // transition: background-image $animation;
 
   img {
     width: 100%;
@@ -54,8 +55,8 @@
   }
 
   @keyframes motion {
-    from { mask-size: 120% 85%; }
-    to { mask-size: 175% 100%; }
+    // from { rotate: 45deg; }
+    // to { rotate: -5deg; }
   }
 
   @keyframes opacity_header {
@@ -107,14 +108,14 @@
 }
 
 .view {
-  margin-bottom: 3vh;
+  // margin-bottom: 3vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   // border: 1px solid red;
   
-  background-image: linear-gradient(0, $theme_light 0, transparent 4%);
-  background-position: bottom;
+  // background-image: linear-gradient(90deg, $theme_light 0, transparent 7%);
+  // background-position: bottom;
 
   // & > * { border: 1px solid red; }
 }

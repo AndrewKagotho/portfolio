@@ -37,6 +37,7 @@ nav {
   height: $nav_height;
   padding-right: 50px;
   position: absolute;
+  z-index: 2;
 
   svg { visibility: hidden; }
 
@@ -81,6 +82,8 @@ menu {
   position: sticky;
   top: 0;
   z-index: 1;
+  backdrop-filter: blur(5px);
+  // border: 1px solid red;
 
   ul {
     padding: 15px 0 15px 20px;
@@ -118,18 +121,16 @@ menu {
 
 footer {
   font-size: .9rem;
+  font-weight: 300;
+  padding: 5vh 5vw;
   color: #FFF;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 5vw;
-
-  & > div {
-    span {
-      display: block;
-      margin: 1vh 0;
-    }
-  }
+  align-items: flex-start;
+  row-gap: 3px;
+  background-image: linear-gradient(90deg, $theme, $theme_light, transparent);
+  background-repeat: no-repeat;
 
   a {
     color: #FFF;
@@ -138,6 +139,10 @@ footer {
     transition: color $animation;
     
     &:hover { color: $grey; }
+  }
+
+  span:last-child {
+    margin: 2vh 0 auto;
   }
 }
 
