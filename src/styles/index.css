@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Gruppo:wght@300;400;500;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700");
 html {
-  font-family: "Gruppo", sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
   scroll-behavior: smooth;
@@ -74,17 +74,30 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px;
+  padding: 0;
 }
 article:hover {
   box-shadow: 4px 4px 3px 1px #E6E6E6;
 }
-article h3 {
-  margin: 0;
+article > div {
+  height: 175px;
+  background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
+  border-radius: 5px;
+  position: relative;
 }
-article button {
-  align-self: flex-end;
-  margin-top: 10px;
+article > div h3 {
+  padding: 25px;
+  color: #FFF;
+  position: absolute;
+  bottom: 15px;
+}
+article > div button {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  translate: 0 50%;
+  color: #000;
+  background-color: #FFF;
 }
 
 hr {
@@ -105,7 +118,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #CCC;
+  background-color: #F3F3F3;
 }
 
 sup {
@@ -191,7 +204,7 @@ nav ul li {
   border: 2px solid #0E1130;
 }
 nav ul li:hover {
-  background-color: #CCC;
+  background-color: #F3F3F3;
   color: #000;
 }
 
@@ -231,7 +244,7 @@ menu ul li {
   position: relative;
 }
 menu ul li:hover {
-  background-color: #CCC;
+  background-color: #F3F3F3;
 }
 
 .menu_alt {
@@ -499,17 +512,11 @@ footer span:last-child {
   justify-content: space-between;
   align-items: flex-start;
 }
-#section_projects hr {
-  margin: 15px 0;
-}
 #section_projects article {
   width: 31%;
 }
 #section_projects article p {
-  margin-top: 0;
-}
-#section_projects button {
-  background-color: #FFF;
+  margin: 35px 25px 25px;
 }
 #section_projects > button:last-child {
   margin: 5vh 0;
@@ -561,6 +568,7 @@ footer span:last-child {
   background-color: #999;
   color: #FFF;
   transition: opacity 0.3s ease-in-out;
+  z-index: 9;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 768px) {

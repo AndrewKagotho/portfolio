@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo:wght@300;400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700');
 
 @mixin h_center_content {
   position: relative;
@@ -36,7 +36,7 @@
 }
 
 html {
-  font-family: 'Gruppo', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-size: 16px;
   font-weight: 400;
   scroll-behavior: smooth;
@@ -96,13 +96,29 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px;
+  padding: 0;
 
-  h3 { margin: 0; }
+  & > div {
+    height: 175px;
+    background-image: $background_image;
+    border-radius: $border_radius;
+    position: relative;
 
-  button {
-    align-self: flex-end;
-    margin-top: 10px;
+    h3 {
+      padding: 25px;
+      color: #FFF;
+      position: absolute;
+      bottom: 15px;
+    }
+
+    button {
+      position: absolute;
+      bottom: 0;
+      left: 25px;
+      translate: 0 50%;
+      color: #000;
+      background-color: #FFF;
+    }
   }
 }
 

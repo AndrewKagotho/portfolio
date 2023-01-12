@@ -198,15 +198,12 @@
     align-items: flex-start;
   }
   
-  hr { margin: 15px 0; }
+  // hr { margin: 15px 0; }
 
   article {
     width: 31%;
-    p { margin-top: 0; }
+    p { margin: 35px 25px 25px; }
   }
-
-  button {
-    background-color: #FFF;}
 
   & > button:last-child {
     margin: 5vh 0;
@@ -259,4 +256,5 @@
   background-color: $grey;
   color: #FFF;
   transition: opacity $animation_alt;
+  z-index: 9;
 }
