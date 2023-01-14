@@ -1,29 +1,14 @@
-const Footer = ({value}) => {
+const Footer = () => {
 
   const year = new Date().getFullYear()
 
-  const closingTag = (
-    <span>Copyright &#169; {year}</span>
-  )
-
-  const openingTag = (
-    <>
+  return (
+    <footer>
       <span>Designed and developed by Andrew Kagotho</span>
       <span>Like what you see? <a href='mailto:andrewkagotho7@live.com'>Send an email</a>.</span>
-    </>
+      <span>Copyright &#169; {year}</span>
+    </footer>
   )
-
-  if(value === 'pri')
-    return (
-      <footer>
-        {openingTag}
-        {closingTag}
-      </footer>
-    )
-  else if(value === 'sec')
-    return <footer className='footer_sec'>{openingTag}<div>{closingTag}</div></footer>
-  else if(value === 'mid')
-    return <footer className='footer_sec footer_center'>{openingTag}<div>{closingTag}</div></footer>
 }
 
 export default Footer

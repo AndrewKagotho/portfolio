@@ -6,8 +6,6 @@ import Tech from '../components/Tech'
 import Projects from '../components/Projects'
 import Footer from '../layout/Footer'
 
-const background = 'https://illustrations.popsy.co/sky/abstract-art-1.svg'
-
 const View = () => {
   
   React.useEffect(() => {
@@ -30,10 +28,9 @@ const View = () => {
             <li><HashLink to='/#section_tech'>Techs</HashLink></li>
             <li><HashLink to='/#section_projects'>Projects</HashLink></li>
           </ul>
-          <img className='background_art_1' src={background} alt='' />
         </menu>
       </div>
-      <Footer value={'pri'} />
+      <Footer />
     </>
   )
 }

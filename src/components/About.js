@@ -10,8 +10,7 @@ const About = () => {
         <div>
           <h3>BASc. in Applied Computer Technology</h3>
           <span>Software Engineering</span>
-          <span>United States International University (USIU - Africa)</span>
-          <span>Nairobi, Kenya</span>
+          <span>United States International University (USIU - Africa), Nairobi, Kenya</span>
         </div>
       </article>
     </section>

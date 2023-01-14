@@ -4,5 +4,19 @@
     margin: 20px 0;
   }
 
-  article { width: 100%; }
+  article {width: 100%;
+
+    & > div:first-child {
+      background-image: $background_image;
+      border-radius: $border_radius;
+      position: relative;
+  
+      h3 { color: #FFF; }
+  
+      button {
+        translate: 0 0;
+        transform: translateY(50%);
+      }
+    }
+  }
 }

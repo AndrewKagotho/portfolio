@@ -96,7 +96,7 @@ h3 {
   transition: color $animation;
 }
 
-p, dt { line-height: $line_height; }
+p, span, dt { line-height: $line_height; }
 
 a {
   color: #000;

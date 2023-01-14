@@ -19,7 +19,10 @@ const ProjectView = () => {
       <h2>County Development Project Tracker</h2>
     )
     description = (
-      <p>An online tracking system that maintains public project records for all 47 counties in Kenya, providing project updates and insights on both county and national levels.</p>
+      <>
+        <h3>Description</h3>
+        <p>An online tracking system that maintains public project records for all 47 counties in Kenya, providing project updates and insights on both county and national levels.</p>
+      </>
     )
     content = (
       <>
@@ -57,7 +60,10 @@ const ProjectView = () => {
       <h2>Crowdfunding app</h2>
     )
     description = (
-      <p>An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with an RDB backend and API integration.</p>
+      <>
+        <h3>Description</h3>
+        <p>An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with a simple relational database and API integration.</p>
+      </>
     )
     content = (
       <>
@@ -90,7 +96,10 @@ const ProjectView = () => {
       <h2>Portfolio</h2>
     )
     description = (
-      <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.</p>
+      <>
+        <h3>Description</h3>
+        <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.</p>
+      </>
     )
     content = (
       <>
@@ -141,10 +150,14 @@ const ProjectView = () => {
 
   return (
     <>
+      <div className='banner secondary_banner'>
+        <div className='banner__title banner__title_sm'>
+            {heading}
+        </div>
+      </div>
       <div className='view secondary_view'>
         <div className='view__content'>
           <section>
-            {heading}
             {description}
             {content}
             <div className='flex_row flex_row_alt'>{technologies}</div>
@@ -167,7 +180,7 @@ const ProjectView = () => {
         <h2 onClick={() => changeProjectButton(1)}>Next project &gt;&gt; {next}</h2>
         <h2 onClick={() => changeProjectButton(-1)}>{prev} &lt;&lt; Previous project</h2>
       </div>
-      <Footer value={'sec'} />
+      <Footer />
     </>
   )
 }

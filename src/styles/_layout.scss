@@ -1,37 +1,3 @@
-.background_art_1 {
-  display: none;
-  width: 35vw;
-  translate: -5% 50%;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  
-  @media (prefers-reduced-motion: no-preference) {
-    animation: art_rotate 4s ease-in-out infinite alternate-reverse;
-  }
-  
-  @keyframes art_rotate {
-    from { rotate: -5deg; }
-    to { rotate: 5deg; }
-  }
-}
-
-.background_art_2 {
-  width: 33vw;
-  position: absolute;
-  bottom: 25vh;
-  left: -31vw;
-
-  @media (prefers-reduced-motion: no-preference) {
-    animation: art_rotate_2 .1s ease-in-out infinite alternate-reverse;
-  }
-  
-  @keyframes art_rotate_2 {
-    from { left: -31vw; }
-    to { left: -31.1vw; }
-  }
-}
-
 nav {
   width: 100vw;
   height: $nav_height;
@@ -58,7 +24,6 @@ nav {
       border-radius: $border_radius;
       transition: color $animation;
       cursor: pointer;
-      border: 2px solid $theme;
 
       &:hover { color: $grey; }
       }
@@ -125,7 +90,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   row-gap: 3px;
-  background-image: linear-gradient(90deg, $theme, $theme_light, transparent);
+  background-image: $background_image_fade;
   background-repeat: no-repeat;
 
   a {
@@ -140,12 +105,4 @@ footer {
   span:last-child {
     margin: 2vh 0 auto;
   }
-}
-
-.footer_sec { height: 130px; }
-
-.footer_center {
-  margin: 0;
-  align-items: center;
-  @include h_center_content;
 }

@@ -3,7 +3,6 @@ $border_radius: 5px;
 $line_height: 1.7;
 
 // Colours
-$base: #FBFBFB;
 $grey: #CCC;
 $grey_alt: #999;
 $grey_dark: #333;
@@ -12,7 +11,8 @@ $shadow: #E6E6E6;
 $theme: #0E1130;
 $theme_light: #11507A;
 $background_image: linear-gradient(45deg, $theme_light 20%, $theme 80%);
-$background_image_alt: linear-gradient(315deg, $theme_light, transparent 25%);
+$background_image_fade: linear-gradient(90deg, $theme, $theme_light, transparent);
+$background_image_fade_alt: linear-gradient(270deg, $theme, $theme_light, transparent);
 
 // Transformations
 $animation: 0.1s linear;

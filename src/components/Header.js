@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <header className='banner primary_banner'>
-        <div className='banner__title'>
+        <div className='banner__title banner__title_lg'>
           <h2>The portfolio of...</h2>
           <h1>Kagotho, Andrew G.</h1>
           <ul>
