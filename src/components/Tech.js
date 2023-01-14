@@ -28,7 +28,7 @@ const Tech = () => {
     <>
       <section id='section_tech'>
         <h2>Technologies</h2>
-        <p>The programming languages and tools I use in my workflow.</p>
+        <p>Working experience with the undermentioned programming languages and tools.</p>
         <h3>Programming languages</h3>
         <dl>
           <dt>Static / dynamic / query / markup languages:</dt>

@@ -35,7 +35,7 @@
 nav {
   width: 100vw;
   height: $nav_height;
-  padding-right: 50px;
+  padding-right: 75px;
   position: absolute;
   z-index: 2;
 
@@ -56,14 +56,11 @@ nav {
       margin: 0;
       padding: 10px 0;
       border-radius: $border_radius;
-      transition: background-color $animation;
+      transition: color $animation;
       cursor: pointer;
       border: 2px solid $theme;
 
-      &:hover {
-        background-color: $hover;
-        color: #000;
-      }
+      &:hover { color: $grey; }
       }
     }
 }
@@ -82,7 +79,6 @@ menu {
   position: sticky;
   top: 0;
   z-index: 1;
-  backdrop-filter: blur(5px);
   // border: 1px solid red;
 
   ul {
