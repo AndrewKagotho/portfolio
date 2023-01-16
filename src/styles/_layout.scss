@@ -44,7 +44,6 @@ menu {
   position: sticky;
   top: 0;
   z-index: 1;
-  // border: 1px solid red;
 
   ul {
     padding: 15px 0 15px 20px;
@@ -75,15 +74,23 @@ menu {
   ul { position: sticky; }
   
   li {
+    display: flex;
     padding-right: 3px;
     span { margin-right: 10px; }
+
+    svg { height: 15px; width: 12px; }
+
+    &:hover {
+      background-color: transparent;
+      sup { translate: 3px -3px; }
+    }
   }
 }
 
 footer {
   font-size: .9rem;
   font-weight: 300;
-  padding: 5vh 5vw;
+  padding: 3vh 3vw;
   color: #FFF;
   display: flex;
   flex-direction: column;

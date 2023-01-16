@@ -206,16 +206,27 @@ menu ul li:hover {
   position: sticky;
 }
 .menu_alt li {
+  display: flex;
   padding-right: 3px;
 }
 .menu_alt li span {
   margin-right: 10px;
 }
+.menu_alt li svg {
+  height: 15px;
+  width: 12px;
+}
+.menu_alt li:hover {
+  background-color: transparent;
+}
+.menu_alt li:hover sup {
+  translate: 3px -3px;
+}
 
 footer {
   font-size: 0.9rem;
   font-weight: 300;
-  padding: 5vh 5vw;
+  padding: 3vh 3vw;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -328,17 +339,19 @@ footer span:last-child {
 .contacts > a:hover sup {
   translate: 3px -3px;
 }
-.contacts svg {
+.contacts a > svg {
   width: 20px;
 }
-.contacts svg path {
+.contacts a > svg path {
   fill: #333;
 }
-.contacts svg .path_no_fill {
+.contacts a > svg .path_no_fill {
   fill: #FFF;
 }
 .contacts sup svg {
-  width: 10px;
+  fill: #333;
+  width: 13px;
+  height: auto;
 }
 
 .view {
@@ -382,6 +395,10 @@ footer span:last-child {
 }
 .view__content_alt section button {
   width: 150px;
+}
+
+.view__content__description {
+  margin-bottom: 8vh;
 }
 
 .flex_row {
@@ -443,24 +460,32 @@ footer span:last-child {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-#section_about article div {
+#section_about article > div:first-child {
   margin-top: 25px;
   padding: 25px;
   color: #FFF;
-  background-image: linear-gradient(270deg, #0E1130, #11507A, transparent);
 }
-#section_about article div > * {
+#section_about article > div:first-child section {
+  margin: 0;
   padding: 0;
-  text-align: right;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#section_about article div h3 {
-  padding-bottom: 15px;
-  margin-top: 10px;
-  text-decoration: underline;
-  text-underline-offset: 15px;
-  text-decoration-thickness: 1px;
+#section_about article > div:first-child section h3 {
+  margin-top: 0px;
 }
-#section_about article div span {
+#section_about article > div:first-child section svg {
+  height: 30px;
+  fill: #FFF;
+  transition: rotate 0.3s ease-in-out;
+}
+#section_about article > div:first-child div {
+  display: none;
+  margin-top: 2vh;
+}
+#section_about article > div:first-child div span {
   display: block;
 }
 
@@ -644,6 +669,10 @@ footer span:last-child {
   .menu_alt ul {
     position: relative;
   }
+  .menu_alt li {
+    justify-content: center;
+    padding: 0;
+  }
   footer {
     flex-direction: column;
   }
@@ -654,6 +683,12 @@ footer span:last-child {
     text-align: center;
   }
 }
+footer {
+  padding: 3vh 0;
+  align-items: center;
+  background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
+}
+
 @media only screen and (min-width: 280px) and (max-width: 768px) {
   .banner {
     display: block;
@@ -717,11 +752,14 @@ footer span:last-child {
   .contacts > a span:first-child {
     display: none;
   }
-  .contacts svg path {
+  .contacts a > svg path {
     fill: #FFF;
   }
-  .contacts svg .path_no_fill {
+  .contacts a > svg .path_no_fill {
     fill: #0E1130;
+  }
+  .contacts sup svg {
+    fill: #FFF;
   }
   .view {
     flex-direction: column;
@@ -747,6 +785,9 @@ footer span:last-child {
     width: 85vw;
     margin-top: 0;
   }
+  .view__content_alt_2 section {
+    padding-bottom: 0;
+  }
   .flex_row {
     gap: 20px;
   }
@@ -756,14 +797,11 @@ footer span:last-child {
   .flex_row_alt span:first-child {
     width: 100%;
   }
-  #section_about article div {
-    background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
-  }
-  #section_about article div > * {
-    text-align: left;
-  }
-  #section_about article div h3 {
-    text-decoration: none;
+  #section_about article {
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #section_projects > div {
     margin: 0;

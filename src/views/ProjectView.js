@@ -38,10 +38,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span>Live demo</span>
+      <span onClick={() => alert(`Link to '${projectArray[0]}' currently unavailable. Try again later.`)}>Live demo</span>
     )
     codeLink = (
-      <span>View code</span>
+      <span onClick={() => alert(`Link to '${projectArray[0]}' currently unavailable. Try again later.`)}>View code</span>
     )
     technologies = (
       <>
@@ -74,10 +74,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span>Live demo</span>
+      <span onClick={() => alert(`Link to '${projectArray[1]}' currently unavailable. Try again later.`)}>Live demo</span>
     )
     codeLink = (
-      <span>View code</span>
+      <span onClick={() => alert(`Link to '${projectArray[1]}' currently unavailable. Try again later.`)}>View code</span>
     )
     technologies = (
       <>
@@ -110,10 +110,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span>Live demo</span>
+      <span onClick={() => alert(`Link to '${projectArray[2]}' currently unavailable. Try again later.`)}>Live demo</span>
     )
     codeLink = (
-      <span>View code</span>
+      <span onClick={() => alert(`Link to '${projectArray[2]}' currently unavailable. Try again later.`)}>View code</span>
     )
     technologies = (
       <>
@@ -156,9 +156,9 @@ const ProjectView = () => {
         </div>
       </div>
       <div className='view secondary_view'>
-        <div className='view__content'>
+        <div className='view__content view__content_alt_2'>
           <section>
-            {description}
+            <div className='view__content__description'>{description}</div>
             {content}
             <div className='flex_row flex_row_alt'>{technologies}</div>
           </section>

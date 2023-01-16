@@ -80,6 +80,11 @@
     height: auto;
     
     ul { position: relative; }
+
+    li {
+      justify-content: center;
+      padding: 0;
+    }
   }
   
   footer {
@@ -90,4 +95,10 @@
       span { text-align: center; }
     }
   }
+}
+
+footer {
+  padding: 3vh 0;
+  align-items: center;
+  background-image: $background_image;
 }

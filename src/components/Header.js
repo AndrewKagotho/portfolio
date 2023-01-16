@@ -1,8 +1,6 @@
-// import background from '../assets/images/Untitled-1.png'
-
 export const redirectSVG = (
   <sup>
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512"><g><path fillRule='evenodd' clipRule='evenodd' fill='#1D1D1D' d="M455.11,455.11H56.89V56.89H256V0H56.89C25.31,0,0,25.61,0,56.89v398.22C0,486.39,25.31,512,56.89,512h398.22 c31.28,0,56.89-25.61,56.89-56.89V256h-56.89V455.11z M312.89,0v56.89H415L135.39,336.5l40.11,40.11L455.11,97v102.11H512V0H312.89 z"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 19H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h5c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.11 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6c0-.55-.45-1-1-1s-1 .45-1 1v5c0 .55-.45 1-1 1zM14 4c0 .55.45 1 1 1h2.59l-9.13 9.13c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L19 6.41V9c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1h-5c-.55 0-1 .45-1 1z"/></svg>
   </sup> 
 )
   
