@@ -13,7 +13,7 @@ const Header = () => {
           <h1>Kagotho, Andrew G.</h1>
           <ul>
             <li>Software Engineer</li>
-            <li>BASc. Applied Computer Technology</li>
+            <li>BSc. Applied Computer Technology</li>
           </ul>
         </div>
         <div className='contacts'>

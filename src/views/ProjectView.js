@@ -38,10 +38,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span onClick={() => alert(`Link to '${projectArray[0]}' currently unavailable. Try again later.`)}>Live demo</span>
+      <span><a href='https://andrewkagotho.github.io/development-project-tracker/' target='_blank' rel='noopener noreferrer'>Live demo</a></span>
     )
     codeLink = (
-      <span onClick={() => alert(`Link to '${projectArray[0]}' currently unavailable. Try again later.`)}>View code</span>
+      <span><a href='https://github.com/AndrewKagotho/development-project-tracker' target='_blank' rel='noopener noreferrer'>View code</a></span>
     )
     technologies = (
       <>
@@ -74,10 +74,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span onClick={() => alert(`Link to '${projectArray[1]}' currently unavailable. Try again later.`)}>Live demo</span>
+      <span><a href='https://andrewkagotho.github.io/crowdfunding-app/' target='_blank' rel='noopener noreferrer'>Live demo</a></span>
     )
     codeLink = (
-      <span onClick={() => alert(`Link to '${projectArray[1]}' currently unavailable. Try again later.`)}>View code</span>
+      <span><a href='https://github.com/AndrewKagotho/crowdfunding-app' target='_blank' rel='noopener noreferrer'>View code</a></span>
     )
     technologies = (
       <>
@@ -110,10 +110,10 @@ const ProjectView = () => {
       </>
     )
     liveLink = (
-      <span onClick={() => alert(`Link to '${projectArray[2]}' currently unavailable. Try again later.`)}>Live demo</span>
+      <span><a href='https://andrewkagotho.github.io/portfolio/' target='_blank' rel='noopener noreferrer'>Live demo</a></span>
     )
     codeLink = (
-      <span onClick={() => alert(`Link to '${projectArray[2]}' currently unavailable. Try again later.`)}>View code</span>
+      <span><a href='https://github.com/AndrewKagotho/portfolio' target='_blank' rel='noopener noreferrer'>View code</a></span>
     )
     technologies = (
       <>
