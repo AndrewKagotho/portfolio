@@ -9,8 +9,8 @@ import './styles/index.css'
 export const AppContext = React.createContext()
 
 const App = () => {
-  const [project, setProject] = React.useState(1)
-  const value = { project, setProject }
+  const [selectedProject, setSelectedProject] = React.useState(1)
+  const value = { selectedProject, setSelectedProject }
 
   return (
     <HashRouter>

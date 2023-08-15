@@ -24,7 +24,7 @@ const Tech = () => {
             {languageNames.map((item, index) => (
               <Tile
                 style={{ scale: '1.2' }}
-                lang={item}
+                name={item}
                 element={languageIcons[index]}
                 ref={toastRef}
                 key={item}
@@ -38,7 +38,7 @@ const Tech = () => {
           <div className='flex_row flex_row_hover'>
             {toolNames.map((item, index) => (
               <Tile
-                lang={item}
+                name={item}
                 element={toolsIcon[index]}
                 ref={toastRef}
                 key={item}
@@ -54,15 +54,15 @@ const Tech = () => {
 
 export default Tech
 
-const Tile = forwardRef((props, ref) => {
-  const displayToast = (value) => {
+const Tile = forwardRef(({ name, style, element: Element }, ref) => {
+  const displayToast = (val) => {
     ref.current.style.opacity = '1'
-    ref.current.textContent = value
+    ref.current.textContent = val
   }
   const hideToast = () => (ref.current.style.opacity = '0')
   return (
-    <dd onMouseOver={() => displayToast(props.lang)} onMouseOut={hideToast}>
-      <props.element style={props.style} />
+    <dd onMouseOver={() => displayToast(name)} onMouseOut={hideToast}>
+      <Element style={style} />
     </dd>
   )
 })

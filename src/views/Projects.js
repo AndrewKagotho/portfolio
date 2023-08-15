@@ -1,15 +1,15 @@
-import React from 'react'
+import { useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../App'
+import { projects, unpublishedProjects } from '../components/projects.resources'
 import Footer from '../layout/Footer'
 
 const Projects = () => {
-
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  const {setProject} = React.useContext(AppContext)
+  const { setProject } = useContext(AppContext)
 
   return (
     <>
@@ -21,31 +21,23 @@ const Projects = () => {
       </div>
       <div className='view secondary_view'>
         <div className='view__content view__content_alt'>
-          <section>
-            <h2>County Development Project Tracker</h2>
-            <p>An online tracking system that maintains public project records for all 47 counties in Kenya, providing project updates and insights on both county and national levels.</p>
-            <Link to='/project'>
-              <button onClick={() => setProject(1)}>View project</button>
-            </Link>
-          </section>
-          <section>
-            <h2>Crowdfunding app</h2>
-            <p>An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with a simple relational database and API integration.</p>
-            <Link to='/project'>
-              <button onClick={() => setProject(2)}>View project</button>
-            </Link>
-          </section>
-          <section>
-            <h2>Portfolio</h2>
-            <p>This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.</p>
-            <Link to='/project'>
-              <button onClick={() => setProject(3)}>View project</button>
-            </Link>
-          </section>
-          <section>
-            <h2>Students' Living Quarters Portal</h2>
-            <p>An account management portal for students and landlords in off-campus living establishments, offering rent management solutions and direct communications in-app. Coming soon.</p>
-          </section>
+          {projects.map((item) => (
+            <section key={item.id}>
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
+              <Link to='/project'>
+                <button onClick={() => setProject(item.id)}>
+                  View project
+                </button>
+              </Link>
+            </section>
+          ))}
+          {unpublishedProjects.map((item) => (
+            <section key={item.id}>
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
+            </section>
+          ))}
         </div>
       </div>
       <Footer />

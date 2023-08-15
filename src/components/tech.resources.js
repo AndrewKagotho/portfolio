@@ -3,6 +3,7 @@ import {
   BiLogoHtml5,
   BiLogoCss3,
   BiLogoJava,
+  BiLogoPhp,
   BiLogoReact,
   BiLogoRedux,
   BiLogoGit
@@ -51,7 +52,7 @@ export const toolNames = [
   'React',
   'Redux',
   'Material UI',
-  'SASS',
+  'SCSS',
   'Jest',
   'Figma',
   'DBMS',

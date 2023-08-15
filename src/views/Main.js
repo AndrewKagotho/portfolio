@@ -1,14 +1,14 @@
-import React from 'react'
-import { HashLink } from 'react-router-hash-link'
+import { useEffect } from 'react'
+import { IconContext } from 'react-icons'
+import Menu from '../components/Menu'
 import Header from '../components/Header'
 import About from '../components/About'
 import Tech from '../components/Tech'
-import Projects from '../components/Projects'
+import ProjectCards from '../components/ProjectCards'
 import Footer from '../layout/Footer'
-import { IconContext } from 'react-icons'
 
 const View = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     // window.scrollTo(0, 0)
   }, [])
 
@@ -28,24 +28,9 @@ const View = () => {
             }}>
             <Tech />
           </IconContext.Provider>
-          <Projects />
+          <ProjectCards />
         </main>
-        <menu>
-          <ul>
-            <li onClick={() => window.scrollTo(0, 0)}>
-              <span>Intro</span>
-            </li>
-            <li>
-              <HashLink to='/#section_about'>About</HashLink>
-            </li>
-            <li>
-              <HashLink to='/#section_tech'>Techs</HashLink>
-            </li>
-            <li>
-              <HashLink to='/#section_projects'>Projects</HashLink>
-            </li>
-          </ul>
-        </menu>
+        <Menu />
       </div>
       <Footer />
     </>
