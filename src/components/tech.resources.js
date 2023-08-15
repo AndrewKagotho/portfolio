@@ -18,6 +18,7 @@ export const languageIcons = [
   BiLogoHtml5,
   BiLogoCss3,
   DiMysql,
+  BiLogoPhp,
   BiLogoJava
 ]
 
@@ -27,6 +28,7 @@ export const languageNames = [
   'HTML5',
   'CSS3',
   'SQL',
+  'PHP',
   'Java'
 ]
 
@@ -35,9 +37,9 @@ export const toolsIcon = [
   SiExpress,
   BiLogoReact,
   BiLogoRedux,
-  SiJest,
   SiMui,
   DiSass,
+  SiJest,
   FaFigma,
   RiDatabase2Fill,
   BiLogoGit
@@ -48,9 +50,9 @@ export const toolNames = [
   'Express',
   'React',
   'Redux',
-  'Jest',
   'Material UI',
-  'SCSS',
+  'SASS',
+  'Jest',
   'Figma',
   'DBMS',
   'Git'
