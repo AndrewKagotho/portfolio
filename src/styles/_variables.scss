@@ -11,6 +11,7 @@ $shadow: #E6E6E6;
 $theme: #0E1130;
 $theme_light: #11507A;
 $background_image: linear-gradient(45deg, $theme_light 20%, $theme 80%);
+$background_image_alt: linear-gradient(45deg, $theme 20%, $theme_light 80%);
 $background_image_fade: linear-gradient(90deg, $theme, $theme_light, transparent);
 $background_image_fade_alt: linear-gradient(270deg, $theme, $theme_light, transparent);
 

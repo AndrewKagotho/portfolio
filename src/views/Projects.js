@@ -1,7 +1,7 @@
 import { useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../App'
-import { projects, unpublishedProjects } from '../components/projects.resources'
+import { projects, unpublishedProjects } from '../data/projects.data'
 import Footer from '../layout/Footer'
 
 const Projects = () => {

@@ -9,7 +9,7 @@ import Footer from '../layout/Footer'
 
 const View = () => {
   useEffect(() => {
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }, [])
 
   return (

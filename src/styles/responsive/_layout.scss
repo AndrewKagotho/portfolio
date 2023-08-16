@@ -8,35 +8,42 @@
       fill: $grey_dark;
       border-radius: $border_radius;
       top: 5vh;
-      translate: 0 0;
+      transform: translate(0, 0);
       position: fixed;
       right: 6vw;
       transform: scale(0.8);
       transition: opacity $animation;
     }
 
-    .showMenu { visibility: visible; opacity: 1; }
-    .closeMenu { visibility: hidden; opacity: 0; }
+    .showMenu {
+      visibility: visible;
+      opacity: 1;
+    }
+    .closeMenu {
+      visibility: hidden;
+      opacity: 0;
+    }
 
     ul {
       height: 50px;
       gap: 0;
       border: 1px solid $grey;
       border-radius: $border_radius;
-      background-color: #FFF;
+      background-color: #fff;
       align-items: center;
-      translate: 0 0;
       position: fixed;
       top: -7vh;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, 0);
       transition: top $animation_alt;
-  
+
       li {
         width: 100px;
         padding: 8px;
         color: #000;
-        &:hover { background-color: transparent; }
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -45,21 +52,20 @@
     width: 100vw;
     height: auto;
     bottom: 0;
-  
+
     ul {
       width: 85vw;
       height: 50px;
       padding: 0 5px;
-      margin-bottom: 5vh;
+      margin: 2.5vh 0;
       border: 1px solid $grey;
       border-radius: $border_radius;
-      background-color: #FFF;
+      background-color: #fff;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      translate: 0 0;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, 0);
 
       li {
         width: calc(100% / 4);
@@ -69,36 +75,42 @@
         padding: 8px;
       }
 
-      span, a {
+      span,
+      a {
         padding: 5px;
-        &:hover { background-color: transparent; }
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }
 
   .menu_alt {
     height: auto;
-    
-    ul { position: relative; }
+
+    ul {
+      position: relative;
+    }
 
     li {
       justify-content: center;
       padding: 0;
     }
   }
-  
+
   footer {
     flex-direction: column;
-    
+
     & > div {
       padding: 3vh 0;
-      span { text-align: center; }
+      span {
+        text-align: center;
+      }
     }
   }
-}
-
-footer {
-  padding: 3vh 0;
-  align-items: center;
-  background-image: $background_image;
+  footer {
+    padding: 3vh 0;
+    align-items: center;
+    background-image: $background_image;
+  }
 }

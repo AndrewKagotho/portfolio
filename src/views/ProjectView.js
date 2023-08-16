@@ -1,8 +1,8 @@
-import { useEffect, useContext } from 'react'
+import { useEffect, useContext, Fragment } from 'react'
 import Footer from '../layout/Footer'
 import { AppContext } from '../App'
 import { redirectSVG } from '../assets/icons'
-import { projects } from '../components/projects.resources'
+import { projects } from '../data/projects.data'
 
 const ProjectView = () => {
   useEffect(() => {
@@ -42,15 +42,17 @@ const ProjectView = () => {
               <h3>Description</h3>
               <p>{showProject.description}</p>
             </div>
-            {showProject.content.map((item) => (
-              <>
+            {showProject.content.map((item, index) => (
+              <Fragment key={index}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-              </>
+              </Fragment>
             ))}
             <div className='flex_row flex_row_alt'>
               <span>Technologies:</span>
-              <dd>React.js</dd>
+              {showProject.keywords.map((item, index) => (
+                <dd key={index}>{item}</dd>
+              ))}
             </div>
           </section>
         </div>

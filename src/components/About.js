@@ -44,7 +44,7 @@ const About = () => {
             </svg>
           </section>
           <div ref={infoRef}>
-            <span>BSc. in Applied Computer Technology</span>
+            <span>BSc. in Applied Computer Technology (Dual-accredited)</span>
             <span>Software Engineering</span>
             <span>United States International University, Nairobi, Kenya</span>
           </div>

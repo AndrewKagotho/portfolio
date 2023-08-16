@@ -11,7 +11,7 @@ const Menu = () => {
           <HashLink to='/#section_about'>About</HashLink>
         </li>
         <li>
-          <HashLink to='/#section_tech'>Techs</HashLink>
+          <HashLink to='/#section_tech'>Tech</HashLink>
         </li>
         <li>
           <HashLink to='/#section_projects'>Projects</HashLink>

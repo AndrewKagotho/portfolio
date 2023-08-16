@@ -5,10 +5,14 @@
 
   // & > * { border: 1px solid red; }
 
-  & > *:last-child { margin: auto; }
+  & > *:last-child {
+    margin: auto;
+  }
 }
 
-.primary_banner { height: 100vh; }
+.primary_banner {
+  height: 100vh;
+}
 
 .secondary_banner {
   h2 {
@@ -24,7 +28,7 @@
   mask-repeat: no-repeat;
   background-image: $background_image;
   background-repeat: no-repeat;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +49,9 @@
       border-left: none;
     }
 
-    &:last-child { padding-right: 0; }
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -60,13 +66,17 @@
   }
 
   @keyframes opacity_header {
-    from { opacity: 1; }
-    to { opacity: .5; }
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
   }
 }
 
 .banner__title_sm {
-  height: 40vh; 
+  height: 40vh;
   mask-size: 100% 90%;
 }
 
@@ -77,23 +87,31 @@
   gap: 40px;
   font-weight: 700;
 
-  a { color: $grey_dark; }
+  a {
+    color: $grey_dark;
+  }
 
   & > a {
     display: flex;
     gap: 10px;
 
     &:hover {
-      sup { translate: 3px -3px; }
+      sup {
+        transform: translate(3px, -3px);
+      }
     }
   }
 
   a > svg {
     width: 20px;
-    path { fill: $grey_dark; }
-    .path_no_fill { fill: #FFF; }
+    path {
+      fill: $grey_dark;
+    }
+    .path_no_fill {
+      fill: #fff;
+    }
   }
-    
+
   sup {
     svg {
       fill: $grey_dark;
@@ -111,7 +129,9 @@
   // & > * { border: 1px solid red; }
 }
 
-.secondary_view { align-items: stretch; }
+.secondary_view {
+  align-items: stretch;
+}
 
 .view__content {
   width: 70vw;
@@ -121,7 +141,10 @@
     padding-bottom: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid $grey;
-    &:last-child { margin-bottom: 0; border: none; }
+    &:last-child {
+      margin-bottom: 0;
+      border: none;
+    }
   }
 }
 
@@ -132,21 +155,31 @@
   position: relative;
 
   section {
-    & > * { text-align: center; }
-    &:last-child { margin-bottom: 20px; }
-    a { display: block; }
-    button { width: 150px; }
+    & > * {
+      text-align: center;
+    }
+    &:last-child {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+    }
+    button {
+      width: 150px;
+    }
   }
 }
 
-.view__content__description { margin-bottom: 8vh; }
+.view__content__description {
+  margin-bottom: 8vh;
+}
 
 .flex_row {
   margin: 20px 0 20px 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  transition: scale $animation;
+  transition: transform $animation;
 
   dd {
     margin: 0;
@@ -161,7 +194,11 @@
   }
 }
 
-.flex_row_hover { &:hover { scale: $scale; } }
+.flex_row_hover {
+  &:hover {
+    transform: scale($scale);
+  }
+}
 
 .flex_row_alt {
   margin: 50px 0 0 0;
@@ -179,7 +216,7 @@
     & > div:first-child {
       margin-top: 25px;
       padding: 25px;
-      color: #FFF;
+      color: #fff;
 
       section {
         margin: 0;
@@ -188,12 +225,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
-        h3 { margin-top: 0px; }
+
+        h3 {
+          margin-top: 0px;
+        }
 
         svg {
           height: 30px;
-          fill: #FFF;
+          fill: #fff;
           transition: rotate $animation_alt;
         }
       }
@@ -201,14 +240,18 @@
       div {
         display: none;
         margin-top: 2vh;
-        span { display: block; }
+        span {
+          display: block;
+        }
       }
     }
   }
 }
 
 #section_tech {
-  dt { margin-top: 10px; }
+  dt {
+    margin-top: 10px;
+  }
 }
 
 #section_projects {
@@ -222,7 +265,7 @@
 
     div {
       height: 22vh;
-  
+
       h3 {
         padding: 10px 25px 25px;
         position: absolute;
@@ -230,7 +273,9 @@
       }
     }
 
-    p { margin-top: 35px; }
+    p {
+      margin-top: 35px;
+    }
   }
 
   & > button:last-child {
@@ -253,15 +298,23 @@
 
   h2 {
     cursor: pointer;
-    
+
     &:first-child {
       align-self: flex-end;
       text-align: right;
-      &:hover { em { left: 15px; } }
+      &:hover {
+        em {
+          left: 15px;
+        }
+      }
     }
 
     &:last-child {
-      &:hover { em { left: -15px; } }
+      &:hover {
+        em {
+          left: -15px;
+        }
+      }
     }
   }
 
@@ -281,7 +334,7 @@
   padding: 5px 15px;
   border-radius: 20px;
   background-color: $grey_alt;
-  color: #FFF;
+  color: #fff;
   transition: opacity $animation_alt;
   z-index: 9;
 }

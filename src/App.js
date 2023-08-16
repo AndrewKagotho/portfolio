@@ -1,4 +1,4 @@
-import React from 'react'
+import { createContext, useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './layout/Navbar'
 import Main from './views/Main'
@@ -6,16 +6,17 @@ import AllProjects from './views/Projects'
 import ProjectView from './views/ProjectView'
 import './styles/index.css'
 
-export const AppContext = React.createContext()
+export const AppContext = createContext()
 
 const App = () => {
-  const [selectedProject, setSelectedProject] = React.useState(1)
+  const [selectedProject, setSelectedProject] = useState(1)
+
   const value = { selectedProject, setSelectedProject }
 
   return (
     <HashRouter>
       <AppContext.Provider value={value}>
-        <Navbar value='primary' />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/projects' element={<AllProjects />} />

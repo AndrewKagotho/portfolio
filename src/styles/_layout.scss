@@ -5,7 +5,9 @@ nav {
   position: absolute;
   z-index: 2;
 
-  svg { visibility: hidden; }
+  svg {
+    visibility: hidden;
+  }
 
   ul {
     display: flex;
@@ -16,7 +18,7 @@ nav {
 
     li {
       width: 80px;
-      color: #FFF;
+      color: #fff;
       text-align: center;
       display: inline-block;
       margin: 0;
@@ -25,9 +27,11 @@ nav {
       transition: color $animation;
       cursor: pointer;
 
-      &:hover { color: $grey; }
+      &:hover {
+        color: $grey;
       }
     }
+  }
 }
 
 .secondary_list {
@@ -63,53 +67,51 @@ menu {
       cursor: pointer;
       position: relative;
 
-      &:hover { background-color: $hover; }
+      &:hover {
+        background-color: $hover;
+      }
     }
   }
 }
 
 .menu_alt {
   height: auto;
-  
-  ul { position: sticky; }
-  
+
+  ul {
+    position: sticky;
+  }
+
   li {
     display: flex;
     padding-right: 3px;
-    span { margin-right: 10px; }
+    span {
+      margin-right: 10px;
+    }
 
-    svg { height: 15px; width: 12px; }
+    svg {
+      height: 15px;
+      width: 12px;
+    }
 
     &:hover {
       background-color: transparent;
-      sup { translate: 3px -3px; }
+      sup {
+        transform: translate(3px, -3px);
+      }
     }
   }
 }
 
 footer {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  padding: 3vh 3vw;
-  color: #FFF;
+  padding: 4vh 0;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  row-gap: 3px;
-  background-image: $background_image_fade;
+  align-items: center;
+  row-gap: 2vh;
+  background-image: $background_image;
   background-repeat: no-repeat;
-
-  a {
-    color: #FFF;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color $animation;
-    
-    &:hover { color: $grey; }
-  }
-
-  span:last-child {
-    margin: 2vh 0 auto;
-  }
 }

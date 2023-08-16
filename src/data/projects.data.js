@@ -6,6 +6,7 @@ export const projects = [
     sourceLink: 'https://github.com/AndrewKagotho/development-project-tracker',
     description:
       'An online tracking and repository system covering development projects in all 47 counties in Kenya, with project insights and updates provided on both county and national levels.',
+    keywords: ['tracker', 'development', 'Kenya'],
     content: [
       {
         title: 'The problem',
@@ -32,6 +33,7 @@ export const projects = [
     sourceLink: 'https://github.com/AndrewKagotho/crowdfunding-app',
     description:
       'An HTML, CSS and JavaScript challenge on Frontend Mentor further developed with a simple relational database and API integration.',
+    keywords: ['pledges', 'tracking'],
     content: [
       {
         title: 'The challenge',
@@ -50,6 +52,7 @@ export const projects = [
     sourceLink: 'https://github.com/AndrewKagotho/portfolio',
     description:
       'This site. Built to showcase itself and other personal projects, providing project commentary, links and previews. Also features current unfinished projects.',
+    keywords: ['projects', 'about'],
     content: [
       {
         title: 'The design',

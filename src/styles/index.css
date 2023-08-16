@@ -69,10 +69,10 @@ article {
   display: flex;
   flex-direction: column;
   padding: 0;
-  transition: scale 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 article:hover {
-  scale: 1.02;
+  transform: scale(1.02);
 }
 article > div:first-child {
   background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
@@ -86,7 +86,7 @@ article > div:first-child button {
   position: absolute;
   bottom: 0;
   left: 25px;
-  translate: 0 50%;
+  transform: translate(0, 50%);
   color: #000;
   background-color: #FFF;
 }
@@ -143,12 +143,12 @@ nav ul {
   gap: 10px;
   position: relative;
   top: 50%;
-  translate: 0 -50%;
+  transform: translate(0, -50%);
   float: right;
 }
 nav ul li {
   width: 80px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   display: inline-block;
   margin: 0;
@@ -184,7 +184,7 @@ menu ul {
   gap: 15px;
   position: relative;
   top: 50%;
-  translate: 0 -50%;
+  transform: translate(0, -50%);
   border-left: 1px solid #CCC;
   z-index: 2;
 }
@@ -220,33 +220,21 @@ menu ul li:hover {
   background-color: transparent;
 }
 .menu_alt li:hover sup {
-  translate: 3px -3px;
+  transform: translate(3px, -3px);
 }
 
 footer {
   font-size: 0.9rem;
   font-weight: 300;
-  padding: 3vh 3vw;
-  color: #FFF;
+  padding: 4vh 0;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  row-gap: 3px;
-  background-image: linear-gradient(90deg, #0E1130, #11507A, transparent);
+  align-items: center;
+  row-gap: 2vh;
+  background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
   background-repeat: no-repeat;
-}
-footer a {
-  color: #FFF;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.1s linear;
-}
-footer a:hover {
-  color: #CCC;
-}
-footer span:last-child {
-  margin: 2vh 0 auto;
 }
 
 .banner {
@@ -274,7 +262,7 @@ footer span:last-child {
   mask-repeat: no-repeat;
   background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
   background-repeat: no-repeat;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +271,7 @@ footer span:last-child {
   width: 50vw;
   position: relative;
   left: 50%;
-  translate: -50% 0;
+  transform: translate(-50%, 0);
   text-align: center;
 }
 .banner__title li {
@@ -337,7 +325,7 @@ footer span:last-child {
   gap: 10px;
 }
 .contacts > a:hover sup {
-  translate: 3px -3px;
+  transform: translate(3px, -3px);
 }
 .contacts a > svg {
   width: 20px;
@@ -346,7 +334,7 @@ footer span:last-child {
   fill: #333;
 }
 .contacts a > svg .path_no_fill {
-  fill: #FFF;
+  fill: #fff;
 }
 .contacts sup svg {
   fill: #333;
@@ -406,7 +394,7 @@ footer span:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  transition: scale 0.1s linear;
+  transition: transform 0.1s linear;
 }
 .flex_row dd {
   margin: 0;
@@ -447,7 +435,7 @@ footer span:last-child {
 }
 
 .flex_row_hover:hover {
-  scale: 1.02;
+  transform: scale(1.02);
 }
 
 .flex_row_alt {
@@ -463,7 +451,7 @@ footer span:last-child {
 #section_about article > div:first-child {
   margin-top: 25px;
   padding: 25px;
-  color: #FFF;
+  color: #fff;
 }
 #section_about article > div:first-child section {
   margin: 0;
@@ -478,7 +466,7 @@ footer span:last-child {
 }
 #section_about article > div:first-child section svg {
   height: 30px;
-  fill: #FFF;
+  fill: #fff;
   transition: rotate 0.3s ease-in-out;
 }
 #section_about article > div:first-child div {
@@ -552,13 +540,13 @@ footer span:last-child {
   opacity: 0;
   position: relative;
   left: 50%;
-  translate: -50% 0;
+  transform: translate(-50%, 0);
   position: fixed;
   bottom: 10vh;
   padding: 5px 15px;
   border-radius: 20px;
   background-color: #999;
-  color: #FFF;
+  color: #fff;
   transition: opacity 0.3s ease-in-out;
   z-index: 9;
 }
@@ -571,17 +559,19 @@ footer span:last-child {
   article {
     width: 100%;
   }
+  article:hover {
+    transform: scale(1);
+  }
   article > div:first-child {
     background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
     border-radius: 5px;
     position: relative;
   }
   article > div:first-child h3 {
-    color: #FFF;
+    color: #fff;
   }
   article > div:first-child button {
-    translate: 0 0;
-    transform: translateY(50%);
+    transform: translate(0, 50%);
   }
 }
 @media only screen and (min-width: 280px) and (max-width: 768px) {
@@ -594,7 +584,7 @@ footer span:last-child {
     fill: #333;
     border-radius: 5px;
     top: 5vh;
-    translate: 0 0;
+    transform: translate(0, 0);
     position: fixed;
     right: 6vw;
     transform: scale(0.8);
@@ -613,13 +603,12 @@ footer span:last-child {
     gap: 0;
     border: 1px solid #CCC;
     border-radius: 5px;
-    background-color: #FFF;
+    background-color: #fff;
     align-items: center;
-    translate: 0 0;
     position: fixed;
     top: -7vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
     transition: top 0.3s ease-in-out;
   }
   nav ul li {
@@ -639,16 +628,15 @@ footer span:last-child {
     width: 85vw;
     height: 50px;
     padding: 0 5px;
-    margin-bottom: 5vh;
+    margin: 2.5vh 0;
     border: 1px solid #CCC;
     border-radius: 5px;
-    background-color: #FFF;
+    background-color: #fff;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    translate: 0 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
   }
   menu ul li {
     width: 25%;
@@ -657,10 +645,12 @@ footer span:last-child {
     border-radius: 5px;
     padding: 8px;
   }
-  menu ul span, menu ul a {
+  menu ul span,
+  menu ul a {
     padding: 5px;
   }
-  menu ul span:hover, menu ul a:hover {
+  menu ul span:hover,
+  menu ul a:hover {
     background-color: transparent;
   }
   .menu_alt {
@@ -682,13 +672,12 @@ footer span:last-child {
   footer > div span {
     text-align: center;
   }
+  footer {
+    padding: 3vh 0;
+    align-items: center;
+    background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
+  }
 }
-footer {
-  padding: 3vh 0;
-  align-items: center;
-  background-image: linear-gradient(45deg, #11507A 20%, #0E1130 80%);
-}
-
 @media only screen and (min-width: 280px) and (max-width: 768px) {
   .banner {
     display: block;
@@ -704,12 +693,12 @@ footer {
   }
   .banner__title {
     justify-content: flex-start;
+    background-image: linear-gradient(45deg, #0E1130 20%, #11507A 80%);
     mask-image: url("../assets/images/Untitled-2.png");
   }
   .banner__title > * {
     width: 85vw;
-    translate: 0 0;
-    transform: translateX(-50%);
+    transform: translate(0, 0);
     text-align: center;
   }
   .banner__title h1 {
@@ -747,19 +736,19 @@ footer {
     transform: translateY(-25vh);
   }
   .contacts > a {
-    color: #FFF;
+    color: #fff;
   }
   .contacts > a span:first-child {
     display: none;
   }
   .contacts a > svg path {
-    fill: #FFF;
+    fill: #fff;
   }
   .contacts a > svg .path_no_fill {
     fill: #0E1130;
   }
   .contacts sup svg {
-    fill: #FFF;
+    fill: #fff;
   }
   .view {
     flex-direction: column;
@@ -836,9 +825,8 @@ footer {
     display: block;
   }
   .toast_text {
-    translate: 0 0;
     bottom: 15vh;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
   }
   .section_about__list {
     line-height: 1.7;

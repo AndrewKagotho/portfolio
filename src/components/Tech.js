@@ -4,7 +4,7 @@ import {
   languageNames,
   toolsIcon,
   toolNames
-} from './tech.resources'
+} from '../data/tech.data'
 
 const Tech = () => {
   const toastRef = useRef()

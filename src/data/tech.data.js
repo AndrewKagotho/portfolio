@@ -14,8 +14,8 @@ import { RiJavascriptFill, RiDatabase2Fill } from 'react-icons/ri'
 import { SiExpress, SiJest, SiMui } from 'react-icons/si'
 
 export const languageIcons = [
-  RiJavascriptFill,
   BiLogoTypescript,
+  RiJavascriptFill,
   BiLogoHtml5,
   BiLogoCss3,
   DiMysql,
@@ -24,8 +24,8 @@ export const languageIcons = [
 ]
 
 export const languageNames = [
-  'JavaScript',
   'TypeScript',
+  'JavaScript',
   'HTML5',
   'CSS3',
   'SQL',

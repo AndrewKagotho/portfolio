@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../App'
 
-import { projects } from './projects.resources'
+import { projects } from '../data/projects.data'
 
 const ProjectCards = () => {
   const { setSelectedProject } = useContext(AppContext)
