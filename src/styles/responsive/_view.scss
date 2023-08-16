@@ -21,7 +21,7 @@
 
     & > * {
       width: 85vw;
-      transform: translate(0, 0);
+      transform: translateX(-50%);
       text-align: center;
     }
 
@@ -200,7 +200,7 @@
 
   .toast_text {
     bottom: 15vh;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
   }
 
   .section_about__list {

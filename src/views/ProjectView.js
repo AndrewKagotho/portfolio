@@ -15,8 +15,8 @@ const ProjectView = () => {
   const changeProject = (arg) => {
     let showID = selectedProject + arg
 
-    if (showID < 1) showID = 3
-    else if (showID > 3) showID = 1
+    if (showID < 1) showID = projects.length
+    else if (showID > projects.length) showID = 1
 
     setSelectedProject(showID)
     window.scrollTo(0, 0)
@@ -49,39 +49,46 @@ const ProjectView = () => {
               </Fragment>
             ))}
             <div className='flex_row flex_row_alt'>
-              <span>Technologies:</span>
+              <span>Keywords:</span>
               {showProject.keywords.map((item, index) => (
                 <dd key={index}>{item}</dd>
               ))}
             </div>
           </section>
         </div>
-        <menu className='menu_alt'>
-          <ul>
-            <li>
-              <span>
-                <a
-                  href={showProject.demoLink}
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  Live demo
-                </a>
-              </span>
-              {redirectSVG}
-            </li>
-            <li>
-              <span>
-                <a
-                  href={showProject.sourceLink}
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  View code
-                </a>
-              </span>
-              {redirectSVG}
-            </li>
-          </ul>
-        </menu>
+        {showProject.demoLink ||
+          (showProject.sourceLink && (
+            <menu className='menu_alt'>
+              <ul>
+                {showProject.demoLink && (
+                  <li>
+                    <span>
+                      <a
+                        href={showProject.demoLink}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        Live demo
+                      </a>
+                    </span>
+                    {redirectSVG}
+                  </li>
+                )}
+                {showProject.sourceLink && (
+                  <li>
+                    <span>
+                      <a
+                        href={showProject.sourceLink}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        View code
+                      </a>
+                    </span>
+                    {redirectSVG}
+                  </li>
+                )}
+              </ul>
+            </menu>
+          ))}
       </div>
       <div className='jump_to_project_section'>
         <h2 onClick={() => changeProject(1)}>

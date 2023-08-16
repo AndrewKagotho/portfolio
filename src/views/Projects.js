@@ -1,7 +1,7 @@
 import { useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../App'
-import { projects, unpublishedProjects } from '../data/projects.data'
+import { projects } from '../data/projects.data'
 import Footer from '../layout/Footer'
 
 const Projects = () => {
@@ -30,12 +30,6 @@ const Projects = () => {
                   View project
                 </button>
               </Link>
-            </section>
-          ))}
-          {unpublishedProjects.map((item) => (
-            <section key={item.id}>
-              <h2>{item.name}</h2>
-              <p>{item.description}</p>
             </section>
           ))}
         </div>
