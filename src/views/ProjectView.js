@@ -1,8 +1,8 @@
 import { useEffect, useContext, Fragment } from 'react'
 import Footer from '../layout/Footer'
 import { AppContext } from '../App'
-import { redirectSVG } from '../assets/icons'
 import { projects } from '../data/projects.data'
+import MenuAlt from '../components/MenuAlt'
 
 const ProjectView = () => {
   useEffect(() => {
@@ -56,39 +56,11 @@ const ProjectView = () => {
             </div>
           </section>
         </div>
-        {showProject.demoLink ||
-          (showProject.sourceLink && (
-            <menu className='menu_alt'>
-              <ul>
-                {showProject.demoLink && (
-                  <li>
-                    <span>
-                      <a
-                        href={showProject.demoLink}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        Live demo
-                      </a>
-                    </span>
-                    {redirectSVG}
-                  </li>
-                )}
-                {showProject.sourceLink && (
-                  <li>
-                    <span>
-                      <a
-                        href={showProject.sourceLink}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        View code
-                      </a>
-                    </span>
-                    {redirectSVG}
-                  </li>
-                )}
-              </ul>
-            </menu>
-          ))}
+        {showProject.status === 'published' ? (
+          <MenuAlt project={showProject} />
+        ) : (
+          <div style={{ width: '15vw' }} />
+        )}
       </div>
       <div className='jump_to_project_section'>
         <h2 onClick={() => changeProject(1)}>

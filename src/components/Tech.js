@@ -1,10 +1,5 @@
 import { useRef, forwardRef } from 'react'
-import {
-  languageIcons,
-  languageNames,
-  toolsIcon,
-  toolNames
-} from '../data/tech.data'
+import { languages, tools } from '../data/tech.data'
 
 const Tech = () => {
   const toastRef = useRef()
@@ -21,13 +16,13 @@ const Tech = () => {
         <dl>
           <dt>Static / dynamic / query / markup languages:</dt>
           <div className='flex_row flex_row_hover'>
-            {languageNames.map((item, index) => (
+            {languages.map((item) => (
               <Tile
-                style={{ scale: '1.2' }}
-                name={item}
-                element={languageIcons[index]}
+                name={item.name}
+                icon={item.icon}
+                style={{ scale: item.scale }}
                 ref={toastRef}
-                key={item}
+                key={item.name}
               />
             ))}
           </div>
@@ -36,12 +31,13 @@ const Tech = () => {
         <dl>
           <dt>Tools / frameworks / libraries:</dt>
           <div className='flex_row flex_row_hover'>
-            {toolNames.map((item, index) => (
+            {tools.map((item) => (
               <Tile
-                name={item}
-                element={toolsIcon[index]}
+                name={item.name}
+                icon={item.icon}
+                style={{ scale: item.scale }}
                 ref={toastRef}
-                key={item}
+                key={item.name}
               />
             ))}
           </div>
@@ -54,7 +50,7 @@ const Tech = () => {
 
 export default Tech
 
-const Tile = forwardRef(({ name, style, element: Element }, ref) => {
+const Tile = forwardRef(({ name, style, icon: Icon }, ref) => {
   const displayToast = (val) => {
     ref.current.style.opacity = '1'
     ref.current.textContent = val
@@ -62,7 +58,7 @@ const Tile = forwardRef(({ name, style, element: Element }, ref) => {
   const hideToast = () => (ref.current.style.opacity = '0')
   return (
     <dd onMouseOver={() => displayToast(name)} onMouseOut={hideToast}>
-      <Element style={style} />
+      <Icon style={style} />
     </dd>
   )
 })

@@ -9,7 +9,7 @@ const Projects = () => {
     window.scrollTo(0, 0)
   }, [])
 
-  const { setProject } = useContext(AppContext)
+  const { setSelectedProject } = useContext(AppContext)
 
   return (
     <>
@@ -26,7 +26,7 @@ const Projects = () => {
               <h2>{item.name}</h2>
               <p>{item.description}</p>
               <Link to='/project'>
-                <button onClick={() => setProject(item.id)}>
+                <button onClick={() => setSelectedProject(item.id)}>
                   View project
                 </button>
               </Link>

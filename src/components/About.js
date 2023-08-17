@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link'
+import { profile } from '../data/profile.data'
 
 let expandedDetails = false
 
@@ -22,13 +22,7 @@ const About = () => {
   return (
     <section id='section_about'>
       <h2>About</h2>
-      <p>
-        Full stack developer with a Bachelor's degree in Applied Computer
-        Technology from the United States International University (USIU -
-        Africa) and competencies in web design and development. Driven towards
-        mastery. See{' '}
-        <HashLink to='/#section_projects'>featured projects</HashLink>.
-      </p>
+      <p>{profile.about}</p>
       <article>
         <div>
           <section onClick={expandDetails}>
@@ -44,9 +38,11 @@ const About = () => {
             </svg>
           </section>
           <div ref={infoRef}>
-            <span>BSc. in Applied Computer Technology (Dual-accredited)</span>
-            <span>Software Engineering</span>
-            <span>United States International University, Nairobi, Kenya</span>
+            <span>{profile.degree.major}</span>
+            <span>{profile.degree.minor}</span>
+            <span>
+              {profile.degree.college}, {profile.degree.location}
+            </span>
           </div>
         </div>
       </article>

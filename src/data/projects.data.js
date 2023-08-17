@@ -89,7 +89,7 @@ export const projects = [
       },
       {
         title: 'The build',
-        text: 'The site is built with React and only features on the client side.'
+        text: 'The site is built with React and features only on the client side.'
       }
     ]
   }

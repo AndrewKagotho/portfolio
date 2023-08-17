@@ -13,48 +13,25 @@ import { DiMysql, DiSass } from 'react-icons/di'
 import { RiJavascriptFill, RiDatabase2Fill } from 'react-icons/ri'
 import { SiExpress, SiJest, SiMui } from 'react-icons/si'
 
-export const languageIcons = [
-  BiLogoTypescript,
-  RiJavascriptFill,
-  BiLogoHtml5,
-  BiLogoCss3,
-  DiMysql,
-  BiLogoPhp,
-  BiLogoJava
+export const languages = [
+  { name: 'TypeScript', icon: BiLogoTypescript, scale: '1.2' },
+  { name: 'JavaScript', icon: RiJavascriptFill, scale: '1.2' },
+  { name: 'HTML5', icon: BiLogoHtml5, scale: '1.1' },
+  { name: 'CSS3', icon: BiLogoCss3, scale: '1.1' },
+  { name: 'SQL', icon: DiMysql, scale: '1.2' },
+  { name: 'PHP', icon: BiLogoPhp, scale: '1.2' },
+  { name: 'Java', icon: BiLogoJava, scale: '1.4' }
 ]
 
-export const languageNames = [
-  'TypeScript',
-  'JavaScript',
-  'HTML5',
-  'CSS3',
-  'SQL',
-  'PHP',
-  'Java'
-]
-
-export const toolsIcon = [
-  FaNodeJs,
-  SiExpress,
-  BiLogoReact,
-  BiLogoRedux,
-  SiMui,
-  DiSass,
-  SiJest,
-  FaFigma,
-  RiDatabase2Fill,
-  BiLogoGit
-]
-
-export const toolNames = [
-  'Node',
-  'Express',
-  'React',
-  'Redux',
-  'Material UI',
-  'SCSS',
-  'Jest',
-  'Figma',
-  'DBMS',
-  'Git'
+export const tools = [
+  { name: 'Node', icon: FaNodeJs, scale: '1' },
+  { name: 'Express', icon: SiExpress, scale: '1' },
+  { name: 'React', icon: BiLogoReact, scale: '1.1' },
+  { name: 'Redux', icon: BiLogoRedux, scale: '1.1' },
+  { name: 'Material UI', icon: SiMui, scale: '.9' },
+  { name: 'SCSS', icon: DiSass, scale: '1' },
+  { name: 'Jest', icon: SiJest, scale: '.9' },
+  { name: 'Figma', icon: FaFigma, scale: '1' },
+  { name: 'DBMS', icon: RiDatabase2Fill, scale: '1' },
+  { name: 'Git', icon: BiLogoGit, scale: '1.1' }
 ]
