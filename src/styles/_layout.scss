@@ -83,13 +83,11 @@ menu {
   li {
     display: flex;
     padding-right: 3px;
-    span {
-      margin-right: 10px;
-    }
 
     svg {
       height: 15px;
       width: 12px;
+      margin-left: 12px;
     }
 
     &:hover {

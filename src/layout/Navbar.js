@@ -32,7 +32,7 @@ const Navbar = () => {
       <ul ref={menuRef}>
         {location.pathname === '/project' ? (
           <Link to='/projects'>
-            <li className='secondary_list'>&lt; See all projects</li>
+            <li className='secondary_list'>&lt; {'  '} See all projects</li>
           </Link>
         ) : (
           <>

@@ -26,11 +26,13 @@
 
     ul {
       height: 50px;
-      gap: 0;
+      padding: 0 5px;
       border: 1px solid $grey;
       border-radius: $border_radius;
       background-color: #fff;
+      justify-content: center;
       align-items: center;
+      gap: 5px;
       position: fixed;
       top: -7vh;
       left: 50%;
@@ -38,8 +40,6 @@
       transition: top $animation_alt;
 
       li {
-        width: 100px;
-        padding: 8px;
         color: #000;
         &:hover {
           background-color: transparent;
@@ -56,48 +56,42 @@
     ul {
       width: 85vw;
       height: 50px;
-      padding: 0 5px;
+      padding: 0;
       margin-bottom: 5vh;
       border: 1px solid $grey;
       border-radius: $border_radius;
       background-color: #fff;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      gap: 10px;
       left: 50%;
-      transform: translate(-50%, 0);
+      transform: translateX(-50%);
 
       li {
-        width: calc(100% / 4);
-        display: inline-block;
         text-align: center;
         border-radius: $border_radius;
-        padding: 8px;
       }
 
       span,
       a {
-        padding: 5px;
-        &:hover {
-          background-color: transparent;
-        }
+        padding: 0 5px;
       }
     }
   }
 
   .menu_alt {
-    height: auto;
-
     ul {
       position: relative;
+      gap: 0;
+      padding: 0 30px;
     }
 
     li {
       justify-content: center;
-      padding: 0;
 
       sup {
-        transform: translateX(-10px);
+        transform: translateX(-5px);
       }
     }
   }

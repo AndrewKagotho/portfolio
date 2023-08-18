@@ -3,6 +3,7 @@ html {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: #fff;
   scroll-behavior: smooth;
 }
 
@@ -88,8 +89,7 @@ article > div:first-child button {
   position: absolute;
   bottom: 0;
   left: 25px;
-  transform: translate(0, 50%);
-  color: #000;
+  transform: translateY(50%);
   background-color: #fff;
 }
 article > *:last-child {
@@ -211,12 +211,10 @@ menu ul li:hover {
   display: flex;
   padding-right: 3px;
 }
-.menu_alt li span {
-  margin-right: 10px;
-}
 .menu_alt li svg {
   height: 15px;
   width: 12px;
+  margin-left: 12px;
 }
 .menu_alt li:hover {
   background-color: transparent;
@@ -602,11 +600,13 @@ footer {
   }
   nav ul {
     height: 50px;
-    gap: 0;
+    padding: 0 5px;
     border: 1px solid #CCC;
     border-radius: 5px;
     background-color: #fff;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
     position: fixed;
     top: -7vh;
     left: 50%;
@@ -614,8 +614,6 @@ footer {
     transition: top 0.3s ease-in-out;
   }
   nav ul li {
-    width: 100px;
-    padding: 8px;
     color: #000;
   }
   nav ul li:hover {
@@ -629,44 +627,36 @@ footer {
   menu ul {
     width: 85vw;
     height: 50px;
-    padding: 0 5px;
+    padding: 0;
     margin-bottom: 5vh;
     border: 1px solid #CCC;
     border-radius: 5px;
     background-color: #fff;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
   }
   menu ul li {
-    width: 25%;
-    display: inline-block;
     text-align: center;
     border-radius: 5px;
-    padding: 8px;
   }
   menu ul span,
   menu ul a {
-    padding: 5px;
-  }
-  menu ul span:hover,
-  menu ul a:hover {
-    background-color: transparent;
-  }
-  .menu_alt {
-    height: auto;
+    padding: 0 5px;
   }
   .menu_alt ul {
     position: relative;
+    gap: 0;
+    padding: 0 30px;
   }
   .menu_alt li {
     justify-content: center;
-    padding: 0;
   }
   .menu_alt li sup {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
   footer {
     flex-direction: column;

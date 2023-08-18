@@ -27,7 +27,7 @@ const ProjectCards = () => {
           ))}
       </div>
       <button>
-        <Link to='/projects'>See all projects &gt;</Link>
+        <Link to='/projects'>See all projects {'  '} &gt;</Link>
       </button>
     </section>
   )

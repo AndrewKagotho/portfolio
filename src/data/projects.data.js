@@ -77,7 +77,6 @@ export const projects = [
     name: 'Portfolio',
     status: 'published',
     featured: 'false',
-    demoLink: 'https://andrewkagotho.github.io/portfolio',
     sourceLink: 'https://github.com/AndrewKagotho/portfolio',
     description:
       'This site. Built to showcase personal projects, providing contextual project commentary and associated links.',
