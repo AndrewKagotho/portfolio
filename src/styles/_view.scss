@@ -240,8 +240,13 @@
       div {
         display: none;
         margin-top: 2vh;
-        span {
+        b {
           display: block;
+        }
+        span {
+          position: relative;
+          left: 10px;
+          line-height: 2;
         }
       }
     }

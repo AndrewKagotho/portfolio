@@ -1,5 +1,5 @@
-import { useRef, forwardRef } from 'react'
-import { languages, tools } from '../data/tech.data'
+import { useRef, forwardRef, Fragment } from 'react'
+import { techData } from '../data/tech.data'
 
 const Tech = () => {
   const toastRef = useRef()
@@ -12,36 +12,27 @@ const Tech = () => {
           Working experience with the undermentioned programming languages and
           tools.
         </p>
-        <h3>Programming languages</h3>
-        <dl>
-          <dt>Static / dynamic / query / markup languages:</dt>
-          <div className='flex_row flex_row_hover'>
-            {languages.map((item) => (
-              <Tile
-                name={item.name}
-                icon={item.icon}
-                style={{ scale: item.scale }}
-                ref={toastRef}
-                key={item.name}
-              />
+        {techData.map((data, index) => (
+          <Fragment key={index}>
+            <h3>{data.section}</h3>
+            {data.content.map((content, index) => (
+              <dl key={index}>
+                <dt>{content.title}:</dt>
+                <div className='flex_row flex_row_hover'>
+                  {content.list.map((item) => (
+                    <Tile
+                      name={item.name}
+                      icon={item.icon}
+                      style={{ scale: item.scale }}
+                      ref={toastRef}
+                      key={item.name}
+                    />
+                  ))}
+                </div>
+              </dl>
             ))}
-          </div>
-        </dl>
-        <h3>Industry</h3>
-        <dl>
-          <dt>Tools / frameworks / libraries:</dt>
-          <div className='flex_row flex_row_hover'>
-            {tools.map((item) => (
-              <Tile
-                name={item.name}
-                icon={item.icon}
-                style={{ scale: item.scale }}
-                ref={toastRef}
-                key={item.name}
-              />
-            ))}
-          </div>
-        </dl>
+          </Fragment>
+        ))}
       </section>
       <span ref={toastRef} className='toast_text'></span>
     </>

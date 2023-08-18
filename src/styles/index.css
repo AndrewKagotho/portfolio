@@ -473,8 +473,13 @@ footer {
   display: none;
   margin-top: 2vh;
 }
-#section_about article > div:first-child div span {
+#section_about article > div:first-child div b {
   display: block;
+}
+#section_about article > div:first-child div span {
+  position: relative;
+  left: 10px;
+  line-height: 2;
 }
 
 #section_tech dt {
@@ -656,7 +661,7 @@ footer {
     justify-content: center;
   }
   .menu_alt li sup {
-    transform: translateX(-5px);
+    transform: translateX(-10px);
   }
   footer {
     flex-direction: column;
@@ -782,7 +787,7 @@ footer {
     width: 100%;
   }
   #section_about article {
-    width: 90vw;
+    width: 87vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

@@ -2,7 +2,7 @@ import { EmailSVG, LinkedInSVG, GitHubSVG } from '../assets/icons.js'
 
 export const profile = {
   name: 'Kagotho, Andrew G.',
-  tags: ['Full Stack Developer', 'BSc. in Applied Computer Technology'],
+  tags: ['Full Stack Developer', 'BSc. Applied Computer Technology'],
   links: [
     {
       username: 'Andrew Kagotho',
@@ -17,13 +17,14 @@ export const profile = {
       icon: GitHubSVG
     },
     {
-      username: 'zxcandrewkagotho7@live.com',
+      username: 'andrewkagotho7@live.com',
       site: 'Email',
       ref: 'mailto:andrewkagotho7@live.com',
       icon: EmailSVG
     }
   ],
-  about: `Full stack developer with a Bachelor's degree in Applied Computer Technology from the United States International University (USIU - Africa) and competencies in web design and development. Driven towards mastery.`,
+  about:
+    'Creation, resilience, and mastery. A working summary to what this section should be. The depiction of an individual who places a high premium on originality, coupled with unimaginable levels of grit in an endless pursuit of mastery. A firm believer of lasting solutions to prevailing problems, especially where the efficiency of code can be applied. I am a full stack developer with competencies in web technologies, and yes, I was the individual in the first part of this winding paragraph. Welcome to my portfolio.',
   degree: {
     major: 'BSc. in Applied Computer Technology (Dual-accredited)',
     minor: 'Software Engineering',

@@ -15,8 +15,12 @@ const Header = () => {
           </ul>
         </div>
         <div className='contacts'>
-          {profile.links.map((item) => (
-            <a href={item.ref} target='_blank' rel='noopener noreferrer'>
+          {profile.links.map((item, index) => (
+            <a
+              href={item.ref}
+              target='_blank'
+              rel='noopener noreferrer'
+              key={index}>
               <span>{item.site}</span>
               {item.icon}
               <span>{item.username}</span>

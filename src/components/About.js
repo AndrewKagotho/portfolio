@@ -38,8 +38,11 @@ const About = () => {
             </svg>
           </section>
           <div ref={infoRef}>
+            <b>Major:</b>
             <span>{profile.degree.major}</span>
+            <b>Concentration:</b>
             <span>{profile.degree.minor}</span>
+            <b>College:</b>
             <span>
               {profile.degree.college}, {profile.degree.location}
             </span>
