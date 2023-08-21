@@ -24,7 +24,7 @@ export const profile = {
     }
   ],
   about:
-    'Creation, resilience, and mastery. A working summary to what this section should be. The depiction of an individual who places a high premium on originality, coupled with unimaginable levels of grit in an endless pursuit of mastery. A firm believer of lasting solutions to prevailing problems, especially where the efficiency of code can be applied. I am a full stack developer with competencies in web technologies, and yes, I was the individual in the first part of this winding paragraph. Welcome to my portfolio.',
+    'Creation, resilience, mastery: a working summary of my pursuits as a developer. These are attributes that depict the premium I place on originality, grit and work towards mastery. I believe in lasting solutions to prevailing problems, especially where the efficiency of code can be applied. I am a full stack developer, and this is my portfolio.',
   degree: {
     major: 'BSc. in Applied Computer Technology (Dual-accredited)',
     minor: 'Software Engineering',

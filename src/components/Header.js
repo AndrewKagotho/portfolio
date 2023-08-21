@@ -21,7 +21,9 @@ const Header = () => {
               target='_blank'
               rel='noopener noreferrer'
               key={index}>
-              <span>{item.site}</span>
+              <span>
+                <b>{item.site}</b>
+              </span>
               {item.icon}
               <span>{item.username}</span>
               <sup>{redirectSVG}</sup>
