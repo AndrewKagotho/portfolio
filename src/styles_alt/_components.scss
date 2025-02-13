@@ -1,0 +1,177 @@
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h1 {
+    margin-top: auto;
+  }
+}
+
+main {
+  height: 100vh;
+  display: flex;
+
+  > section {
+    padding: 1.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bai Jamjuree';
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  color: $text_dark;
+  text-decoration: none;
+}
+
+button {
+  padding: 7px 15px;
+  border: 1px solid $grey;
+  background-color: transparent;
+  border-radius: $border_radius;
+  transition: background-color $animation;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grey_hover !important;
+  }
+}
+
+// Classes
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+
+  > *:first-child {
+    @include text_gradient;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+}
+
+.icon_grid {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  align-items: center;
+  column-gap: 0.6rem;
+  row-gap: 0.4rem;
+
+  em {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: block;
+  }
+
+  svg {
+    fill: $text_light;
+    transform: scale(0.85);
+
+    .path_no_fill {
+      fill: $theme_light;
+    }
+  }
+}
+
+.icon_grid-lg {
+  grid-template-columns: 2.5rem auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.icon_grid-sm {
+  row-gap: 0;
+}
+
+.tile {
+  @include card;
+  @include glass_effect;
+}
+
+.tiled_cards {
+  position: relative;
+
+  > div {
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px #bbb;
+    border-radius: $border_radius;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top $animation;
+
+    &:first-child {
+      width: 100%;
+      top: 6%;
+      z-index: 50;
+    }
+
+    &:nth-child(2) {
+      width: 95%;
+      top: 3%;
+      z-index: 40;
+    }
+
+    &:last-child {
+      width: 90%;
+      top: 0%;
+      z-index: 30;
+    }
+  }
+
+  h3 {
+    margin: auto;
+    color: $grey_alt;
+  }
+}
+
+.toast_text {
+  opacity: 0;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10vh;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: $grey_alt;
+  color: #fff;
+  transition: opacity $animation_alt;
+  z-index: 10;
+}
